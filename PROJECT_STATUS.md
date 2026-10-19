@@ -34,7 +34,7 @@ Do not mark tasks DONE based on narrative alone. Require commit identifiers, cha
 - B-001 is **not accepted**. Recommended disposition is
   `CHANGES_REQUIRED / READY_FOR_OWNER_REVIEW`; see
   [B-001 correction assessment](./B-001-CORRECTION-20261019-001.md).
-- The four-layer architecture and Sales Manager role reconciliation,
+- The four-layer architecture and CAI Sales Manager role reconciliation,
   `SM-REQ-001`–`SM-REQ-010`, and `B-023`–`B-032` are proposals pending explicit
   owner decision.
 - GOV-1.0 remains `PENDING_OWNER_APPROVAL`; implementation remains

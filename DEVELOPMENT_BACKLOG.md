@@ -24,7 +24,7 @@
 ## Agent execution rule
 One bounded task per prompt, with explicit permitted paths, prohibited changes, acceptance criteria and evidence requirements. Stop when prerequisites are absent.
 
-## Additive Sales Manager backlog proposal — not authorized
+## Additive CAI Sales Manager backlog proposal — not authorized
 
 The Revision 2 master state preserves its existing 22 ticket IDs, `B-001` through
 `B-022`. The rows below are proposed additions only; they do not change the
@@ -33,14 +33,14 @@ authorization. They depend on owner decisions and prerequisite governance work.
 
 | ID | Proposed task | Priority | Depends on | State | Definition of done (future evidence; not present) |
 |---|---|---|---|---|---|
-| B-023 | Define Sales Strategy decision model and owner policy | P0 | B-002, B-004, B-005 | PROPOSED | Owner-approved objectives, constraints, decision rights, versioning and review scenarios; traced to SM-REQ-001 |
+| B-023 | Define CAI Sales Manager Strategy decision model and owner policy | P0 | B-002, B-004, B-005 | PROPOSED | Owner-approved objectives, constraints, decision rights, versioning and review scenarios; traced to SM-REQ-001 |
 | B-024 | Define Marketing Decision Engine policy and recommendation contract | P0 | B-003, B-005, B-023 | PROPOSED | Approved channel/source permissions, recommendation criteria, approval boundaries and negative scenarios; SM-REQ-002 |
 | B-025 | Define Campaign Planning lifecycle and review gates | P0 | B-023, B-024, B-030 | PROPOSED | Approved plan fields, state transitions, budget linkage and no-execution-before-approval evidence; SM-REQ-003 |
 | B-026 | Define explainable Lead Prioritization policy | P0 | B-002, B-010, B-013, B-023 | PROPOSED | Owner-approved factors/thresholds, evidence requirements, uncertainty handling and evaluation set; SM-REQ-004 |
-| B-027 | Define Agent Assignment and capability-routing policy | P0 | B-005, B-007, B-008, B-023 | PROPOSED | Agent capability/permission matrix, assignment rules, denial/escalation cases and audit evidence; SM-REQ-005 |
+| B-027 | Define CAI Sales Manager Agent Assignment and capability-routing policy | P0 | B-005, B-007, B-008, B-023 | PROPOSED | Agent capability/permission matrix, assignment rules, denial/escalation cases and audit evidence; SM-REQ-005 |
 | B-028 | Define Result Validation rubric and lifecycle | P0 | B-007, B-016, B-021 | PROPOSED | Versioned output schemas and validation criteria; pass/fail/inconclusive scenarios and evidence lineage; SM-REQ-006 |
-| B-029 | Define Sales Operations workflow/state model | P0 | B-010, B-017, B-018, B-023, B-025, B-027, B-028 | PROPOSED | Approved workflow map, pause/cancel/suppress/escalate policies and operator acceptance cases; SM-REQ-007 |
-| B-030 | Define commercial and execution Budget Management policy | P0 | B-002, B-023 | PROPOSED | Owner-approved ceilings, period/allocation rules, thresholds, variance and stop/escalation policy; SM-REQ-008 |
+| B-029 | Define CAI Sales Manager Operations workflow/state model | P0 | B-010, B-017, B-018, B-023, B-025, B-027, B-028 | PROPOSED | Approved workflow map, pause/cancel/suppress/escalate policies and operator acceptance cases; SM-REQ-007 |
+| B-030 | Define CAI Sales Manager commercial and execution Budget Management policy | P0 | B-002, B-023 | PROPOSED | Owner-approved ceilings, period/allocation rules, thresholds, variance and stop/escalation policy; SM-REQ-008 |
 | B-031 | Define Sales Reporting metric dictionary and provenance | P1 | B-004, B-023, B-026, B-028, B-030 | PROPOSED | Owner-approved metrics, formulas, source lineage, uncertainty labels and reconciliation scenarios; SM-REQ-009 |
 | B-032 | Define Control Center roles, views and gated actions | P0 | B-008, B-012, B-023, B-025, B-027, B-028, B-029, B-030, B-031 | PROPOSED | Approved role/action matrix, workflow views, accessibility requirements and policy-gated action scenarios; SM-REQ-010 |
 

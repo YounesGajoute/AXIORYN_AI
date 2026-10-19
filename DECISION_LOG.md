@@ -13,14 +13,14 @@
 | ADR-004 | Model/provider routing | OPEN | Cost, quality and portability | Define criteria |
 | ADR-005 | CRM and LinkedIn integration mechanisms | OPEN | API and policy constraints | Verify permitted access |
 | ADR-006 | Hosting, CI/CD and operations | OPEN | Availability and ownership | Review deployment targets |
-| ADR-SM-001 | Four-layer architecture and Sales Manager / Agent 01 / Agent 09 roles | PROPOSED_PENDING_OWNER_APPROVAL | Separate Core runtime orchestration from Sales Manager commercial decision-making; avoid duplicate executive/orchestration authority | Owner to choose an option in `SYSTEM_ARCHITECTURE.md`; no implementation |
+| ADR-SM-001 | Four-layer architecture and CAI Sales Manager / Agent 01 / Agent 09 roles | PROPOSED_PENDING_OWNER_APPROVAL | Separate Core runtime orchestration from CAI Sales Manager commercial decision-making; avoid duplicate executive/orchestration authority | Owner to choose an option in `SYSTEM_ARCHITECTURE.md`; no implementation |
 
 ## ADR template
 ID; title; date; status (PROPOSED/ACCEPTED/REJECTED/SUPERSEDED); context; options; decision; rationale; consequences; security implications; owner approval; evidence links.
 
 Only the owner or explicitly delegated approver may move an ADR to ACCEPTED. Record supersession rather than silently editing historical decisions.
 
-## ADR-SM-001 — Four-layer architecture and Sales Manager authority proposal
+## ADR-SM-001 — Four-layer architecture and CAI Sales Manager authority proposal
 
 - **Date:** 2026-10-19
 - **Status:** PROPOSED_PENDING_OWNER_APPROVAL
@@ -32,18 +32,20 @@ Only the owner or explicitly delegated approver may move an ADR to ACCEPTED. Rec
   commercial/runtime authority.
 - **Proposal:** Use four logical layers: (1) Experience/Control Center,
   (2) AXIORYN AI Core runtime, (3) business domain components with the dedicated
-  Sales Manager, and (4) policy-enforced connectors/data boundaries.
+  CAI Sales Manager, and (4) policy-enforced connectors/data boundaries.
+- **Naming:** “CAI” is the owner-provided component label; its expansion and
+  formal product naming remain unspecified pending owner confirmation.
 - **Authority boundary:** Core owns generic task execution, agent/tool
   invocation, identity/permissions, policy enforcement, approvals, technical
-  quotas, audit and observability. Sales Manager owns commercial strategy and
+  quotas, audit and observability. CAI Sales Manager owns commercial strategy and
   domain workflow choices within owner-approved rules; it requests Core
   capabilities but cannot grant permissions or invoke external systems directly.
-- **Agent relationship:** Recommended interpretation is Agent 01 as the Sales
+- **Agent relationship:** Recommended interpretation is Agent 01 as the CAI Sales
   Manager's bounded commercial orchestration role, renamed to clarify its scope.
   Agent 09 is a specialist providing follow-up/account-strategy recommendations,
   not a second manager. No separate Executive Director is introduced unless the
   owner explicitly defines one.
-- **Options:** (1) align Agent 01 to Sales Manager (recommended); (2) retain Agent
+- **Options:** (1) align Agent 01 to CAI Sales Manager (recommended); (2) retain Agent
   01 as a distinct subordinate delegate; (3) add a separate Executive Director
   role with explicitly approved authority and hierarchy.
 - **Consequences:** Preserves one shared runtime; keeps commercial policy in the

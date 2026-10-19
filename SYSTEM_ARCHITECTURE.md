@@ -59,7 +59,7 @@ Layer 2 — AXIORYN AI Core runtime
   Identity/context, task lifecycle, agent execution, tool gateway,
   policy/approval enforcement, audit, telemetry, quotas and shared services
                          |
-Layer 3 — Sales domain and AXIORYN AI Sales Manager
+Layer 3 — Sales domain and CAI Sales Manager
   Commercial strategy, marketing decisions, campaign plans, lead prioritization,
   task assignment intent, result acceptance criteria, sales operations,
   commercial budget policy and domain reporting
@@ -71,14 +71,14 @@ Layer 4 — Policy-enforced connectors and data boundaries
 
 The layers describe responsibility boundaries, not deployment units or a
 prescribed technology stack. Core services may be invoked by other business
-modules; Sales Manager is the first business orchestration component and is
-implemented as domain logic using Core contracts. Sales Manager must not host a
-second agent runtime, identity system, authorization engine, audit source of
-truth, or direct connector path.
+modules; CAI Sales Manager is the dedicated first business orchestration
+component and is implemented as domain logic using Core contracts. CAI Sales
+Manager must not host a second agent runtime, identity system, authorization
+engine, audit source of truth, or direct connector path.
 
 ### Core runtime versus commercial decisions
 
-| Concern | AXIORYN AI Core runtime | AXIORYN AI Sales Manager |
+| Concern | AXIORYN AI Core runtime | CAI Sales Manager |
 |---|---|---|
 | Orchestration | Generic task dispatch, lifecycle, retries, cancellation, execution budgets and telemetry | Chooses commercial objective, workflow, sequence, priorities and domain-specific next action within approved policy |
 | Agents/tools | Registry, capability boundary, invocation, permissions and execution context | Requests eligible specialist work; cannot grant its own tools or permissions |
@@ -88,40 +88,41 @@ truth, or direct connector path.
 | Side effects | Mediates and blocks unauthorized connector calls | Proposes external actions; never directly sends, publishes, commits spend or mutates a third-party system |
 
 Core therefore performs **runtime orchestration and control enforcement**, not
-sales strategy or commercial judgment. Sales Manager performs **commercial
+sales strategy or commercial judgment. CAI Sales Manager performs **commercial
 decision-making and domain workflow coordination**, not privileged runtime
 execution.
 
 ### Agent and role reconciliation proposal
 
-- **AXIORYN AI Sales Manager:** the business component and owner of Sales domain
-  strategy and coordination decisions; not synonymous with one model/agent
-  invocation.
+- **CAI Sales Manager:** the dedicated business component and owner of Sales
+  domain strategy and coordination decisions; not synonymous with one
+  model/agent invocation. “CAI” is used as supplied by the owner; its expansion
+  is not established in this proposal.
 - **Agent 01 — AI Executive Director (existing prompt name):** recommend
-  aligning this role with the Sales Manager's bounded commercial orchestration
-  function and renaming it **Agent 01 — Sales Manager / Commercial Orchestrator**.
+  aligning this role with CAI Sales Manager's bounded commercial orchestration
+  function and renaming it **Agent 01 — CAI Sales Manager / Commercial Orchestrator**.
   It may propose/coordinate decisions but cannot grant permissions, bypass
   approvals, or claim human executive authority. This rename requires owner
   approval.
 - **Agent 09 — Follow-up & Account Strategy Agent:** a specialist under the
-  Sales Manager workflow. It supplies account-history, timing, suppression,
+  CAI Sales Manager workflow. It supplies account-history, timing, suppression,
   follow-up and escalation recommendations. It does not own overall sales
   strategy, assign unrelated agents, or act as an independent orchestrator.
 - **Executive Director:** do not add a second component by implication. The
   original Agent 01 label already calls it “AI Executive Director”; the
-  proposal is to treat that as a legacy name for the Sales Manager coordination
-  role. If the owner intends a separate executive role, its decision authority,
+  proposal is to treat that as a legacy name for the CAI Sales Manager
+  coordination role. If the owner intends a separate executive role, its decision authority,
   human oversight, hierarchy and relation to Sales Manager must be explicitly
   decided before architecture approval. It must not be implemented as a second
   Core runtime.
 
 ### Owner decision options
 
-1. **Recommended:** approve the four layers above, align Agent 01 with Sales
+1. **Recommended:** approve the four layers above, align Agent 01 with CAI Sales
    Manager, and retain Agent 09 as a subordinate specialist; no separate
    Executive Director component.
-2. Keep Agent 01 as a distinct Sales Manager delegate, with the Sales Manager
-   component retaining explicit policy and decision ownership.
+2. Keep Agent 01 as a distinct CAI Sales Manager delegate, with the CAI Sales
+   Manager component retaining explicit policy and decision ownership.
 3. Establish a separate Executive Director business role only after defining
    authority, reporting hierarchy and limits; this is a materially different
    governance choice.
