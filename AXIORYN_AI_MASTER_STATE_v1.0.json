@@ -5,12 +5,15 @@
   "owner": "AXIORYN Engineering Systems",
   "first_module": "AXIORYN AI Sales Team",
   "baseline_id": "GOV-1.0",
-  "state_revision": 1,
+  "state_revision": 2,
   "as_of_date": "2026-10-19",
   "baseline_status": "PROPOSED_PENDING_OWNER_APPROVAL",
   "implementation_status": "NOT_VERIFIED_NOT_AUTHORIZED",
+  "canonical_repository": "https://github.com/YounesGajoute/AXIORYN_AI.git",
+  "canonical_branch": "main",
+  "head_commit_at_report": "d1b1e7e4b2fe6d7c3012845238558ba4e8cd9044",
   "evidence_scope": {
-    "observed": "Project conversation governance instructions and accessible metadata; no project repository, implementation tests, deployment or project-specific technical files verified.",
+    "observed": "Owner-designated GitHub repository https://github.com/YounesGajoute/AXIORYN_AI.git; local workspace inventory; git commit d1b1e7e (six governance documents). No application source, tests, deployments, or migrations verified on HEAD.",
     "excluded": "Unrelated Library documents (AAB-5000).",
     "external_sources": [
       "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
@@ -42,6 +45,10 @@
     {
       "id": "C-006",
       "text": "No software implementation is to begin during project initialization."
+    },
+    {
+      "id": "C-007",
+      "text": "Canonical git remote is https://github.com/YounesGajoute/AXIORYN_AI.git."
     }
   ],
   "proposed_decisions": [
@@ -483,9 +490,11 @@
       "priority": "P0",
       "dependencies": [],
       "other_dependencies": "Owner provides repo",
-      "status": "BLOCKED",
-      "completion_evidence": "inventory + gaps, no edits",
-      "report_ids": [],
+      "status": "READY_FOR_REVIEW",
+      "completion_evidence": "inventory + gaps; GitHub HEAD is documentation-only; see AGENT-20261019-001",
+      "report_ids": [
+        "AGENT-20261019-001"
+      ],
       "review_ids": []
     },
     {
@@ -839,7 +848,7 @@
       "risk": "Missing repository baseline / legacy behavior",
       "mitigation": "read-only inventory; no assumptions about existing code",
       "role": "Owner + agent",
-      "status": "ACTIVE BLOCKER"
+      "status": "OPEN — remote identified; implementation baseline still absent"
     },
     {
       "id": "RK-08",
@@ -903,7 +912,8 @@
       "id": "BL-01",
       "required_input": "Repository URL or archive, branch and codebase access",
       "blocks": "B-001 and all coding tasks",
-      "status": "OPEN"
+      "status": "CLOSED_URL_RESOLVED_REPO_DOCS_ONLY",
+      "resolution": "Owner supplied https://github.com/YounesGajoute/AXIORYN_AI.git. Inventory complete for current HEAD (docs only). Coding remains unauthorized until G0 and ADRs."
     },
     {
       "id": "BL-02",
@@ -948,7 +958,17 @@
       "status": "OPEN"
     }
   ],
-  "agent_reports": [],
+  "agent_reports": [
+    {
+      "report_id": "AGENT-20261019-001",
+      "task_id": "B-001",
+      "report_schema": "AXAI-AGENT-REPORT-1.0",
+      "artifact": "AXIORYN_AI_AGENT_REPORT_AGENT-20261019-001.json",
+      "requested_status": "READY_FOR_REVIEW",
+      "head_commit_at_inventory": "d1b1e7e4b2fe6d7c3012845238558ba4e8cd9044",
+      "recorded_date": "2026-10-19"
+    }
+  ],
   "review_decisions": [],
   "release_history": [],
   "next_actions": [
@@ -962,16 +982,22 @@
       "order": 2,
       "id": "OWNER-002",
       "action": "Supply authorized repository/archive and approve read-only B-001 assessment",
-      "status": "PENDING"
+      "status": "REPO_SUPPLIED_REVIEW_PENDING"
     },
     {
       "order": 3,
       "id": "B-001",
-      "action": "Run read-only inventory ONLY after separate authorization",
-      "status": "BLOCKED"
+      "action": "Owner/governance review of AGENT-20261019-001; disposition ACCEPTED or CHANGES_REQUIRED",
+      "status": "READY_FOR_REVIEW"
     },
     {
       "order": 4,
+      "id": "B-002",
+      "action": "Stakeholder use cases, scope and NFR baselines after B-001 acceptance",
+      "status": "NOT_STARTED"
+    },
+    {
+      "order": 5,
       "id": "B-006",
       "action": "Potential first software implementation; requires F0 acceptance and approved ADRs and agent prompt",
       "status": "NOT_AUTHORIZED"
@@ -990,8 +1016,14 @@
       "date": "2026-10-19",
       "summary": "Initialized governance charter, 26 requirements, 22 backlog tickets, 14 risks, 8 blockers and two separate coding-agent prompts.",
       "approval": "PENDING"
+    },
+    {
+      "revision": 2,
+      "date": "2026-10-19",
+      "summary": "Recorded AGENT-20261019-001 (B-001/SM-001 inventory). Canonical remote set. BL-01 closed as docs-only GitHub repo. B-001 READY_FOR_REVIEW. Implementation still unauthorized.",
+      "approval": "PENDING"
     }
   ],
-  "persistence_note": "This file was created as a downloadable conversation artifact. It has not been stored in the project repository or auto-synced to future sessions. Add it to owner-controlled project files or repository for canonical persistence.",
+  "persistence_note": "Canonical copies live in https://github.com/YounesGajoute/AXIORYN_AI.git on branch main. State revision 2 records B-001 inventory; it is not owner acceptance.",
   "report_schema_id": "AXAI-AGENT-REPORT-1.0"
 }

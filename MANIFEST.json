@@ -1,6 +1,8 @@
 {
   "baseline": "GOV-1.0",
   "generated_date": "2026-10-19",
+  "state_revision": 2,
+  "head_commit_at_generation_note": "Regenerate hashes after commit; values below are working-tree files.",
   "files": [
     {
       "file": "AXIORYN_AI_GOVERNANCE_MASTER_v1.0.md",
@@ -9,8 +11,8 @@
     },
     {
       "file": "AXIORYN_AI_MASTER_STATE_v1.0.json",
-      "size_bytes": 29288,
-      "sha256": "79961cf4aa1163820d3250613599ac39e4cc99b9f12aba5230b2acdf14334464"
+      "size_bytes": 30811,
+      "sha256": "25c91e8fbb50a0944f400e9e65dfc2b4141bef0f47eb1d34a768d5bd183f4adc"
     },
     {
       "file": "AXIORYN_AI_CODING_AGENT_PROMPT_001.md",
@@ -21,12 +23,18 @@
       "file": "AXIORYN_AI_IMPLEMENTATION_PROMPT_002_DRAFT.md",
       "size_bytes": 5617,
       "sha256": "314f34cf4eb19d27bd59fd16d131ec5f6567f86b6878d76a9c3a381e72174bae"
+    },
+    {
+      "file": "AXIORYN_AI_AGENT_REPORT_AGENT-20261019-001.json",
+      "size_bytes": 6841,
+      "sha256": "bc43e5a9e6fa5d85f560a46595d897a33cef60870c780a298f24562c0b0a2247"
     }
   ],
   "counts": {
     "requirements": 26,
     "backlog_tickets": 22,
     "risks": 14,
-    "blockers": 8
+    "blockers": 8,
+    "agent_reports": 1
   }
 }
