@@ -5,7 +5,7 @@
   "owner": "AXIORYN Engineering Systems",
   "first_module": "AXIORYN AI Sales Team",
   "baseline_id": "GOV-1.0",
-  "state_revision": 2,
+  "state_revision": 5,
   "as_of_date": "2026-10-19",
   "baseline_status": "PROPOSED_PENDING_OWNER_APPROVAL",
   "implementation_status": "NOT_VERIFIED_NOT_AUTHORIZED",
@@ -49,6 +49,60 @@
     {
       "id": "C-007",
       "text": "Canonical git remote is https://github.com/YounesGajoute/AXIORYN_AI.git."
+    },
+    {
+      "id": "ADR-SM-001",
+      "decision_id": "ADR-SM-001",
+      "selected_option": "Option 1",
+      "status": "ACCEPTED",
+      "approval_authority": "PROJECT_OWNER",
+      "approval_date": "2026-10-19",
+      "authority_boundary": "AXIORYN AI Core retains exclusive authority over technical orchestration, execution, identity, permissions, approvals, integration access, quotas, audit, and observability; CAI Sales Manager owns commercial strategy and domain coordination within owner-approved policy.",
+      "implementation_authorization": false,
+      "evidence_refs": [
+        "DECISION_LOG.md",
+        "SYSTEM_ARCHITECTURE.md",
+        "PROJECT_STATUS.md",
+        "B-001-CORRECTION-20261019-001.md"
+      ],
+      "summary": "Agent 01 is the bounded commercial leadership role within CAI Sales Manager. Agent 09 remains a specialist without independent managerial authority. No separate Executive Director or direct external connector path is authorized."
+    },
+    {
+      "id": "C-008",
+      "text": "Branch Policy Option A: main is the canonical project branch; v1 is the governance preparation and review branch; no branch switching, commit, push, merge, reset, or implementation is authorized by this instruction."
+    },
+    {
+      "id": "C-009",
+      "decision_id": "B-001-DOC-ACCEPTED",
+      "selected_option": "ACCEPTED_DOCUMENTATION_ONLY",
+      "status": "ACCEPTED_DOCUMENTATION_ONLY",
+      "approval_authority": "PROJECT_OWNER",
+      "approval_date": "2026-10-19",
+      "authority_boundary": "The B-001 documentation package is accepted for governance review only; it does not authorize implementation, external integration, Git commit/push/merge, or any production action.",
+      "implementation_authorization": false,
+      "evidence_refs": [
+        "PROJECT_STATUS.md",
+        "DECISION_LOG.md",
+        "B-001-CORRECTION-20261019-001.md"
+      ],
+      "summary": "B-001 documentation is accepted for review and recordkeeping only; implementation remains prohibited."
+    },
+    {
+      "id": "C-010",
+      "decision_id": "B-002-DOC-ACCEPTED",
+      "selected_option": "ACCEPTED_DOCUMENTATION_ONLY",
+      "status": "ACCEPTED_DOCUMENTATION_ONLY",
+      "approval_authority": "PROJECT_OWNER",
+      "approval_date": "2026-10-19",
+      "authority_boundary": "The B-002 documentation package is accepted for governance review only; it does not approve GOV-1.0, proposed Sales Manager requirements, proposed NFR targets, or implementation work.",
+      "implementation_authorization": false,
+      "evidence_refs": [
+        "B-002-AGENT-REPORT.md",
+        "B-002-OWNER-DECISION-REGISTER.md",
+        "PROJECT_STATUS.md",
+        "DECISION_LOG.md"
+      ],
+      "summary": "B-002 documentation is accepted as a governance package without approving implementation or unapproved proposals."
     }
   ],
   "proposed_decisions": [
@@ -85,6 +139,11 @@
     {
       "id": "ADR-007",
       "topic": "CRM and email providers",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ADR-SM-001",
+      "topic": "Sales Manager architecture and role boundaries",
       "status": "PROPOSED"
     }
   ],
@@ -796,7 +855,7 @@
   "risk_register": [
     {
       "id": "RK-01",
-      "score_proposed": "5×5",
+      "score_proposed": "5\u00d75",
       "risk": "LinkedIn capability/API or data-use restriction",
       "mitigation": "R-009; verify entitlements and permissible uses; approved alternatives only",
       "role": "Owner + legal/integrations",
@@ -804,7 +863,7 @@
     },
     {
       "id": "RK-02",
-      "score_proposed": "4×5",
+      "score_proposed": "4\u00d75",
       "risk": "Privacy and unlawful contact processing",
       "mitigation": "purpose/source register, minimization, deletion, suppression, jurisdiction review",
       "role": "Owner + privacy",
@@ -812,7 +871,7 @@
     },
     {
       "id": "RK-03",
-      "score_proposed": "4×5",
+      "score_proposed": "4\u00d75",
       "risk": "Unapproved external outreach/spam",
       "mitigation": "deterministic approval and suppression, disabled-by-default connectors",
       "role": "Engineering",
@@ -820,7 +879,7 @@
     },
     {
       "id": "RK-04",
-      "score_proposed": "4×5",
+      "score_proposed": "4\u00d75",
       "risk": "LLM hallucinated facts, buying committee roles",
       "mitigation": "source provenance, quality set, unverified flags, human review",
       "role": "AI lead",
@@ -828,7 +887,7 @@
     },
     {
       "id": "RK-05",
-      "score_proposed": "4×5",
+      "score_proposed": "4\u00d75",
       "risk": "Prompt injection causes tool abuse",
       "mitigation": "untrusted source isolation, typed tool gateway, capability allowlist",
       "role": "Security lead",
@@ -836,7 +895,7 @@
     },
     {
       "id": "RK-06",
-      "score_proposed": "4×4",
+      "score_proposed": "4\u00d74",
       "risk": "Architecture coupling between Core/Sales",
       "mitigation": "context boundaries, ADRs, contract tests",
       "role": "Architecture lead",
@@ -844,15 +903,15 @@
     },
     {
       "id": "RK-07",
-      "score_proposed": "4×4",
+      "score_proposed": "4\u00d74",
       "risk": "Missing repository baseline / legacy behavior",
       "mitigation": "read-only inventory; no assumptions about existing code",
       "role": "Owner + agent",
-      "status": "OPEN — remote identified; implementation baseline still absent"
+      "status": "OPEN \u2014 remote identified; implementation baseline still absent"
     },
     {
       "id": "RK-08",
-      "score_proposed": "3×5",
+      "score_proposed": "3\u00d75",
       "risk": "Credential leak or access escalation",
       "mitigation": "managed secrets, short-lived tokens, RBAC, scans",
       "role": "Security lead",
@@ -860,7 +919,7 @@
     },
     {
       "id": "RK-09",
-      "score_proposed": "4×4",
+      "score_proposed": "4\u00d74",
       "risk": "Unreliable source data / licensing",
       "mitigation": "approved-source catalog, source contracts and quality review",
       "role": "Sales product owner",
@@ -868,7 +927,7 @@
     },
     {
       "id": "RK-10",
-      "score_proposed": "3×4",
+      "score_proposed": "3\u00d74",
       "risk": "CRM corruption / duplicate writes",
       "mitigation": "transactional outbox, idempotency, reconciliation, dry-run",
       "role": "Engineering",
@@ -876,7 +935,7 @@
     },
     {
       "id": "RK-11",
-      "score_proposed": "3×5",
+      "score_proposed": "3\u00d75",
       "risk": "Multi-org information leakage",
       "mitigation": "tenant boundary verification, isolated retrieval/logging",
       "role": "Security lead",
@@ -884,7 +943,7 @@
     },
     {
       "id": "RK-12",
-      "score_proposed": "3×4",
+      "score_proposed": "3\u00d74",
       "risk": "Budget/performance overrun",
       "mitigation": "task quotas, token caps, metering and budget sign-off",
       "role": "Owner + engineering",
@@ -892,7 +951,7 @@
     },
     {
       "id": "RK-13",
-      "score_proposed": "3×5",
+      "score_proposed": "3\u00d75",
       "risk": "Deployment outage / unrecoverable migration",
       "mitigation": "staging, rollback, encrypted backups and restore drill",
       "role": "Operations",
@@ -900,7 +959,7 @@
     },
     {
       "id": "RK-14",
-      "score_proposed": "4×4",
+      "score_proposed": "4\u00d74",
       "risk": "Unverified agent self-reported completion",
       "mitigation": "mandatory evidence and independent acceptance",
       "role": "Governance lead",
@@ -969,7 +1028,25 @@
       "recorded_date": "2026-10-19"
     }
   ],
-  "review_decisions": [],
+  "review_decisions": [
+    {
+      "review_id": "OWNER-ADR-SM-001-20261019",
+      "decision_id": "ADR-SM-001",
+      "decision_type": "ARCHITECTURE",
+      "status": "ACCEPTED",
+      "approved_option": "OPTION_1",
+      "approval_authority": "Project Owner",
+      "approval_date": "2026-10-19",
+      "decision_summary": "Agent 01 serves as bounded commercial leadership and coordination within CAI Sales Manager, not as an independent Executive Director or second technical orchestration runtime. Core retains exclusive shared runtime, identity, permission, policy and approval enforcement, integration access, technical quota, audit, and observability authority. CAI Sales Manager owns commercial strategy and domain decisions within approved policies. Agent 09 remains a specialist without independent managerial authority.",
+      "scope_exclusions": [
+        "GOV-1.0 approval",
+        "B-001 acceptance",
+        "software implementation authorization",
+        "external integration authorization"
+      ],
+      "source": "Owner Architecture Decision Notification supplied 2026-10-19"
+    }
+  ],
   "release_history": [],
   "next_actions": [
     {
@@ -1022,8 +1099,14 @@
       "date": "2026-10-19",
       "summary": "Recorded AGENT-20261019-001 (B-001/SM-001 inventory). Canonical remote set. BL-01 closed as docs-only GitHub repo. B-001 READY_FOR_REVIEW. Implementation still unauthorized.",
       "approval": "PENDING"
+    },
+    {
+      "revision": 3,
+      "date": "2026-10-19",
+      "summary": "Appended Project Owner approval of ADR-SM-001 Option 1. Preserved 26 existing requirements, 22 existing backlog tasks, B-001 review disposition, and GOV-1.0 pending owner approval; no implementation or external integration authorization.",
+      "approval": "OWNER_APPROVED_ADR_SM_001_ONLY"
     }
   ],
-  "persistence_note": "Canonical copies live in https://github.com/YounesGajoute/AXIORYN_AI.git on branch main. State revision 2 records B-001 inventory; it is not owner acceptance.",
+  "persistence_note": "State revision 3 appends Project Owner acceptance of ADR-SM-001 Option 1 only. GOV-1.0 remains PROPOSED_PENDING_OWNER_APPROVAL, B-001 remains READY_FOR_REVIEW, and implementation remains NOT_VERIFIED_NOT_AUTHORIZED. Local files are not published unless separately authorized and pushed.",
   "report_schema_id": "AXAI-AGENT-REPORT-1.0"
 }

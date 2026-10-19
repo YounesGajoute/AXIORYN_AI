@@ -43,13 +43,17 @@ Durable jobs, retry/backoff, idempotency keys, dead-letter handling, timeouts an
 ## Architecture decision gates
 ADR approval required for language/framework, storage, orchestration, model providers, CRM and LinkedIn integration, hosting, identity, tenancy and data residency.
 
+## Branch policy (owner-approved)
+`main` is the canonical project branch. `v1` is reserved for governance preparation and review. No implementation, commit, push, merge, reset, or branch switching is authorized by this instruction.
+
 ## Validation
 No claim of repository conformance until a read-only inventory maps existing code to the proposed components. Do not begin implementation at this stage.
 
-## Four-layer reconciliation proposal — ADR-SM-001
+## Four-layer architecture decision — ADR-SM-001
 
-**Status:** PROPOSED_PENDING_OWNER_APPROVAL. This is a logical architecture
-proposal, not an observed implementation and not a decision.
+**Status:** ACCEPTED by Project Owner, Option 1, 2026-10-19. This is an
+architecture decision for logical responsibility boundaries, not an observed
+implementation or authorization to implement.
 
 ```text
 Layer 1 — Experience and Control Center
@@ -92,41 +96,42 @@ sales strategy or commercial judgment. CAI Sales Manager performs **commercial
 decision-making and domain workflow coordination**, not privileged runtime
 execution.
 
-### Agent and role reconciliation proposal
+### Agent and role decision
 
 - **CAI Sales Manager:** the dedicated business component and owner of Sales
   domain strategy and coordination decisions; not synonymous with one
   model/agent invocation. “CAI” is used as supplied by the owner; its expansion
   is not established in this proposal.
-- **Agent 01 — AI Executive Director (existing prompt name):** recommend
-  aligning this role with CAI Sales Manager's bounded commercial orchestration
-  function and renaming it **Agent 01 — CAI Sales Manager / Commercial Orchestrator**.
-  It may propose/coordinate decisions but cannot grant permissions, bypass
-  approvals, or claim human executive authority. This rename requires owner
-  approval.
+- **Agent 01 — AI Executive Director (existing prompt name):** SHALL serve as
+  the bounded commercial leadership and coordination role within CAI Sales
+  Manager. It is not an independent Executive Director or a second technical
+  orchestration runtime. The owner decision does not require a title rename.
+  Agent 01 cannot grant permissions or bypass approvals.
 - **Agent 09 — Follow-up & Account Strategy Agent:** a specialist under the
   CAI Sales Manager workflow. It supplies account-history, timing, suppression,
   follow-up and escalation recommendations. It does not own overall sales
   strategy, assign unrelated agents, or act as an independent orchestrator.
-- **Executive Director:** do not add a second component by implication. The
-  original Agent 01 label already calls it “AI Executive Director”; the
-  proposal is to treat that as a legacy name for the CAI Sales Manager
-  coordination role. If the owner intends a separate executive role, its decision authority,
-  human oversight, hierarchy and relation to Sales Manager must be explicitly
-  decided before architecture approval. It must not be implemented as a second
-  Core runtime.
+- **Executive Director:** no separate Executive Director component is approved.
+  The legacy Agent 01 label does not confer human executive authority or define
+  a second role. A future proposal for a separate executive role requires a new
+  owner decision and must not create a second Core runtime.
 
 ### Owner decision options
 
-1. **Recommended:** approve the four layers above, align Agent 01 with CAI Sales
-   Manager, and retain Agent 09 as a subordinate specialist; no separate
-   Executive Director component.
-2. Keep Agent 01 as a distinct CAI Sales Manager delegate, with the CAI Sales
-   Manager component retaining explicit policy and decision ownership.
-3. Establish a separate Executive Director business role only after defining
-   authority, reporting hierarchy and limits; this is a materially different
-   governance choice.
+**Selected: Option 1 — ACCEPTED 2026-10-19 by Project Owner.** Agent 01 serves
+as the bounded commercial leadership and coordination role within CAI Sales
+Manager. Agent 01 is not an independent Executive Director or second technical
+orchestration runtime. AXIORYN AI Core retains exclusive authority over shared
+agent execution, identity, permissions, policy and approval enforcement,
+integration access, technical quotas, audit and observability. CAI Sales Manager
+owns commercial strategy, campaign planning, lead prioritization, specialist
+task planning, result evaluation and commercial performance decisions within
+approved policies. Agent 09 remains a specialist providing account-strategy and
+follow-up recommendations without independent managerial authority.
 
-No option is selected until the owner records an explicit decision in the
-decision log. These diagrams and responsibilities are proposals, not repository
-facts.
+No separate Executive Director component is approved by this decision.
+Changing that role structure requires a new owner-approved decision.
+
+This decision does not approve GOV-1.0, accept B-001, authorize implementation,
+or authorize external integrations. The architecture is a governance decision,
+not evidence of repository implementation.

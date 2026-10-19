@@ -1,0 +1,75 @@
+
+> axioryn-ai@0.1.0 test
+> node --test tests/*.test.mjs
+
+(node:38012) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ local CRM API enforces authentication, isolation, workflow policy and durability
+  ✔ first-run setup, password validation, owner session and security headers (258.6586ms)
+  ✔ CSRF, origin, unknown fields and tenant override are rejected (41.0929ms)
+  ✔ validated CRM CRUD and transactional duplicate handling (58.8174ms)
+  ✔ owner manages roles; reviewers and operators have bounded authority (287.9789ms)
+  ✔ knowledge, content, meetings and proposals remain source-linked local plans (184.6775ms)
+  ✔ approval binds exact content; double approvals and edited approvals are denied (228.7177ms)
+  ✔ kill switch, suppression and quiet hours block execution (180.9108ms)
+  ✔ recipient changes revoke exact approval and approval expiry is enforced (126.0688ms)
+  ✔ local tasks are bounded, source-linked and never treat input as instructions (45.2321ms)
+  ✔ tenant boundaries hide foreign IDs on reads, updates, references and imports (19.5348ms)
+  ✔ export omits secrets; disabling a user revokes sessions (201.7267ms)
+  ✔ records survive restart; logout terminates session (73.0955ms)
+✔ local CRM API enforces authentication, isolation, workflow policy and durability (1851.8571ms)
+(node:13460) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ SQLite backup includes open WAL data and refuses destructive destinations (935.6043ms)
+✔ Core registers a versioned bounded Sales module without a domain dependency (15.2061ms)
+✔ Core rejects invalid manifests, duplicate agents and incompatible schemas (1.9623ms)
+✔ Core denies foreign permissions, tenants and all undeclared or live capabilities (2.1865ms)
+✔ Sales template output records its schema and prompt version and leaves unknowns explicit (1.0006ms)
+✔ model transport rejects redirects and offers no storage or tool authority (72.2127ms)
+✔ an oversized streaming provider response is cancelled before it is fully buffered (7.247ms)
+✔ the provider response cap measures UTF-8 bytes rather than JavaScript characters (13.0484ms)
+(node:27200) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ AI configuration stays disabled without all explicit server settings and clamps bounds (4.8972ms)
+✔ model service authority belongs to Core and requires per-call owner confirmation (4.7316ms)
+✔ provider sends bounded selected data with fixed endpoint, no tools/store and strict structured output (632.4425ms)
+▶ provider fails closed on refused, incomplete, malformed, unknown-source and oversized responses
+  ✔ unknown source (2.6552ms)
+  ✔ unexpected property (1.0196ms)
+  ✔ malformed JSON (3.3113ms)
+  ✔ incomplete (1.1811ms)
+  ✔ refusal (1.0893ms)
+  ✔ tool call (0.9067ms)
+  ✔ provider HTTP error (1.3043ms)
+  ✔ oversized body (5.3665ms)
+✔ provider fails closed on refused, incomplete, malformed, unknown-source and oversized responses (21.0406ms)
+✔ provider enforces timeout and explicit cancellation without automatic retries (13.3365ms)
+✔ API AI run is disabled by default, owner-only and requires explicit per-call confirmation (585.5389ms)
+✔ AI reservation blocks duplicate execution and cancellation discards pending output (127.2615ms)
+▶ pending AI output is discarded after kill switch, source changes or owner logout
+  ✔ kill (140.8957ms)
+  ✔ source (131.3309ms)
+  ✔ logout (202.1425ms)
+✔ pending AI output is discarded after kill switch, source changes or owner logout (475.5263ms)
+✔ failed attempts consume durable quota, bounded retries and no automatic resend (264.6128ms)
+✔ AI reservation and audit are atomic and interrupted running jobs recover without resending (437.6536ms)
+(node:23904) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a review request waiting for its body cannot restore an older draft revision (384.222ms)
+✔ a held run cannot execute a task that another request has already completed (174.9173ms)
+✔ role downgrade and session revocation also block an already-started mutation (339.7415ms)
+✔ an operator cannot retain owner approval while changing an approved campaign budget (337.007ms)
+✔ audit persistence failures roll back settings, strategy, users and task transitions (470.1823ms)
+✔ host, origin and encoded public paths reject access outside the local workspace (173.7924ms)
+✔ untrusted CRM and research values remain inert in rendered UI (33.6917ms)
+✔ editing a record preserves an existing custom status or role (0.7251ms)
+✔ date formatting tolerates missing or invalid imported data (135.0381ms)
+✔ strict stylesheet policy is compatible with all dynamic UI charts (4.2783ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 52
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3079.9771

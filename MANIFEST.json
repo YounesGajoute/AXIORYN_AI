@@ -1,40 +1,157 @@
-{
-  "baseline": "GOV-1.0",
-  "generated_date": "2026-10-19",
-  "state_revision": 2,
-  "head_commit_at_generation_note": "Regenerate hashes after commit; values below are working-tree files.",
-  "files": [
+﻿[
     {
-      "file": "AXIORYN_AI_GOVERNANCE_MASTER_v1.0.md",
-      "size_bytes": 32019,
-      "sha256": "e90eb6ed468e482e3171136599649d44f2155056ce2649996ff7cd2c8bfd3568"
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\AGENT_REPORT_TEMPLATE.md",
+        "size_bytes":  1738,
+        "sha256":  "08B95078CC4C9377EEDA002E103CDBBEA1882AB353F49BC79F3573DE2E387C1A"
     },
     {
-      "file": "AXIORYN_AI_MASTER_STATE_v1.0.json",
-      "size_bytes": 30811,
-      "sha256": "25c91e8fbb50a0944f400e9e65dfc2b4141bef0f47eb1d34a768d5bd183f4adc"
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\ARCHITECTURE_ADR_PROPOSALS.md",
+        "size_bytes":  9295,
+        "sha256":  "06D53565708B60763D07A56403EFC4713F5C2762CA390336ACA2B1E74EAECEC2"
     },
     {
-      "file": "AXIORYN_AI_CODING_AGENT_PROMPT_001.md",
-      "size_bytes": 5376,
-      "sha256": "2a48e7d837d24946d6a2cdeb645214f4902881ddff4f90bfc967f71fd19bc21c"
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\ARCHITECTURE_CONTRACTS_PROPOSED.md",
+        "size_bytes":  18062,
+        "sha256":  "E9F84FA126783615F447BD0A98A5D305618EBF4B0A063D739BC77EA84DD7E8FE"
     },
     {
-      "file": "AXIORYN_AI_IMPLEMENTATION_PROMPT_002_DRAFT.md",
-      "size_bytes": 5617,
-      "sha256": "314f34cf4eb19d27bd59fd16d131ec5f6567f86b6878d76a9c3a381e72174bae"
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\ARCHITECTURE_DECISION_READINESS_MATRIX.md",
+        "size_bytes":  9372,
+        "sha256":  "30F186D297244B04395150B0758F4A1F359F786F820DE5167897F8F337D02B2C"
     },
     {
-      "file": "AXIORYN_AI_AGENT_REPORT_AGENT-20261019-001.json",
-      "size_bytes": 6841,
-      "sha256": "bc43e5a9e6fa5d85f560a46595d897a33cef60870c780a298f24562c0b0a2247"
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\ARCHITECTURE_GOVERNANCE_AGENT_REPORT.md",
+        "size_bytes":  6539,
+        "sha256":  "9E9AB200BB73748BB122B5C4806FC0A5399105E6D2B85FB1E95CD2B4BE55F5A3"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\ARCHITECTURE_TRACEABILITY.md",
+        "size_bytes":  11964,
+        "sha256":  "34D33FEA8675729AA14FC8EF3F2727FBA6B5949E58E01F3F1561D9CD1A7CFE4D"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\AXIORYN _AI—MASTER_ENGINEERING\u0026EXECUTION_PROMPT.md",
+        "size_bytes":  28891,
+        "sha256":  "71E7F869F49AA6D27089DA634537D76A26EB04DB8E134F952C166C8665A9F567"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\AXIORYN_AI_AGENT_REPORT_AGENT-20261019-001.json",
+        "size_bytes":  6841,
+        "sha256":  "BC43E5A9E6FA5D85F560A46595D897A33CEF60870C780A298F24562C0B0A2247"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\AXIORYN_AI_CODING_AGENT_PROMPT_001.md",
+        "size_bytes":  5376,
+        "sha256":  "2A48E7D837D24946D6A2CDEB645214F4902881DDFF4F90BFC967F71FD19BC21C"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\AXIORYN_AI_GOVERNANCE_MASTER_v1.0.md",
+        "size_bytes":  32019,
+        "sha256":  "E90EB6ED468E482E3171136599649D44F2155056CE2649996FF7CD2C8BFD3568"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\AXIORYN_AI_IMPLEMENTATION_PROMPT_002_DRAFT.md",
+        "size_bytes":  5617,
+        "sha256":  "314F34CF4EB19D27BD59FD16D131EC5F6567F86B6878D76A9C3A381E72174BAE"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\AXIORYN_AI_MASTER_STATE_v1.0.json",
+        "size_bytes":  36538,
+        "sha256":  "4ACAC031586FFC9A503547F89B3D9AD351DFB0650990DA853246DB7590F8CA44"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\B-001-CORRECTION-20261019-001.md",
+        "size_bytes":  12306,
+        "sha256":  "835B63B560B1D93E15050B9A3FCEE3BCAA22D5BAC95C446ED4E2E38A37B149A2"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\B-002-AGENT-REPORT.md",
+        "size_bytes":  2871,
+        "sha256":  "57B56FF4601A7754C66DA10E482E1CF83F08617AF80EE0357FE59E573B86263B"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\B-002-COMPLETENESS-MATRIX.md",
+        "size_bytes":  2093,
+        "sha256":  "2B36137A4046F00381D01661D87687807F55459F1E3D382D9EDE5804F8C47EA7"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\B-002-FINDINGS-REGISTER.md",
+        "size_bytes":  3305,
+        "sha256":  "7E3C51C9829E5921F1973C5F93CB6C2C895601620D23FE17ED7678F85C94C9C7"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\B-002-NONFUNCTIONAL-REQUIREMENTS.md",
+        "size_bytes":  5008,
+        "sha256":  "A3FBA559B9F0E99078F55A731758A8C7E4767AB7F6CA7E402A4B9D6354DCC4F6"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\B-002-OWNER-DECISION-REGISTER.md",
+        "size_bytes":  4270,
+        "sha256":  "658D75F691379157736619A07AB3B5C7987FF4052E55DFD26A6B7E3BAECB4D23"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\B-002-TRACEABILITY-MATRIX.md",
+        "size_bytes":  8178,
+        "sha256":  "15164D981768B7ADAAA924B5D5AD6E21D13E7DDED85F76E1F6E8495B010D94B3"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\B-002-USE-CASES.md",
+        "size_bytes":  16775,
+        "sha256":  "BF6BA7AC1B8585D8C7C6D8711126315A33393FC1548782763F8DF1EEFD526981"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\DATA_GOVERNANCE_PROPOSAL.md",
+        "size_bytes":  4437,
+        "sha256":  "ED4F99E02B66FEDEA945063A0E6E8AB3778C9AC053A99490AE4ADCE081B5F5A1"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\DECISION_LOG.md",
+        "size_bytes":  6165,
+        "sha256":  "0EF9A92A59A5719DF2DD2FF743F3C9F35675C5E1BAE52F9117DBF48458B50BAA"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\DEVELOPMENT_BACKLOG.md",
+        "size_bytes":  5236,
+        "sha256":  "E067535BD3C20DF11F3FED50CC273E8656679D12339F38410D292FB4B0F27211"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\EXTERNAL_INTEGRATION_GOVERNANCE_PROPOSAL.md",
+        "size_bytes":  5729,
+        "sha256":  "93C10490B018D119BA7FD7B819626731599EF8CBCD50C960C88350F159E65AEB"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\FORMAL_ARCHITECTURE_CONTRACT_ADDENDUM.md",
+        "size_bytes":  4792,
+        "sha256":  "0C402912ED6077A76ACE3A1B83B0B0660333E20D388536731684C925A10C4CD4"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\IDENTITY_TENANT_ISOLATION_PROPOSAL.md",
+        "size_bytes":  7727,
+        "sha256":  "3848E2E0A02DEE44C8CB5FFD5611A15D219B1EB8F37D47EE0B663BBE04AF81C4"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\MASTER_REQUIREMENTS.md",
+        "size_bytes":  10460,
+        "sha256":  "4AD2F379E26486848F55D680837B9CC6A7622DAFED7293C374083CB14C56ED3B"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\PROJECT_CHARTER.md",
+        "size_bytes":  1970,
+        "sha256":  "6DA60E32AB4D263B521A0E5E639632DF42FE20C08514F73FAD5199C2475FFD1D"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\PROJECT_STATUS.md",
+        "size_bytes":  3299,
+        "sha256":  "8356CC1B36A37C7223F8BD03906B2F29EFE14E0EA122E72633D99E94CCDBF4E0"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\RELEASE_CHECKLIST.md",
+        "size_bytes":  1781,
+        "sha256":  "DB8F86AAEA031618447672AA895153E4C67CAF343F3171C884B0E449291CE98E"
+    },
+    {
+        "file":  "C:\\Users\\YOUNES\\Documents\\AXIORYN_AI\\SYSTEM_ARCHITECTURE.md",
+        "size_bytes":  7845,
+        "sha256":  "A27DE0C32C63589CB8CC96BAA838AC6F9C81233944B1AAE37D84991F166212BE"
     }
-  ],
-  "counts": {
-    "requirements": 26,
-    "backlog_tickets": 22,
-    "risks": 14,
-    "blockers": 8,
-    "agent_reports": 1
-  }
-}
+]

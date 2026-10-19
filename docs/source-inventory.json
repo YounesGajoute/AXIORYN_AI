@@ -1,0 +1,4248 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-19T14:51:08.900Z",
+  "source_scope": "Original root Markdown/JSON documents from historical MANIFEST.json, plus MANIFEST.json itself; generated application files and docs/ are excluded.",
+  "historical_manifest_self_exclusion": "The original manifest excludes its own hash. This inventory hashes it because this report is written separately under docs/.",
+  "file_count": 32,
+  "total_size_bytes": 293544,
+  "historical_manifest_mismatches": [],
+  "errors": [],
+  "files": [
+    {
+      "path": "AGENT_REPORT_TEMPLATE.md",
+      "size_bytes": 1738,
+      "sha256": "08b95078cc4c9377eeda002e103cdbbea1882ab353f49bc79f3573de2e387c1a",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 1738,
+        "sha256": "08b95078cc4c9377eeda002e103cdbbea1882ab353f49bc79f3573de2e387c1a",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Coding Agent Report Template"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Required metadata"
+          },
+          {
+            "line": 22,
+            "level": 2,
+            "title": "1. Objective and authorization"
+          },
+          {
+            "line": 25,
+            "level": 2,
+            "title": "2. Repository inventory / changes"
+          },
+          {
+            "line": 28,
+            "level": 2,
+            "title": "3. Requirement traceability"
+          },
+          {
+            "line": 32,
+            "level": 2,
+            "title": "4. Tests and verification"
+          },
+          {
+            "line": 35,
+            "level": 2,
+            "title": "5. Architecture and security review"
+          },
+          {
+            "line": 38,
+            "level": 2,
+            "title": "6. Risks, blockers and deviations"
+          },
+          {
+            "line": 42,
+            "level": 2,
+            "title": "7. Proposed master-state patch"
+          },
+          {
+            "line": 45,
+            "level": 2,
+            "title": "8. Final declaration"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [],
+        "requirement_ids": [],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "ARCHITECTURE_ADR_PROPOSALS.md",
+      "size_bytes": 9295,
+      "sha256": "06d53565708b60763d07a56403efc4713f5c2762ca390336aca2b1e74eaecec2",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 9295,
+        "sha256": "06d53565708b60763d07a56403efc4713f5c2762ca390336aca2b1e74eaecec2",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Proposed ADR Package"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "ADR-001 — Runtime and orchestration architecture"
+          },
+          {
+            "line": 13,
+            "level": 3,
+            "title": "Context"
+          },
+          {
+            "line": 16,
+            "level": 3,
+            "title": "Options considered"
+          },
+          {
+            "line": 21,
+            "level": 3,
+            "title": "Proposed decision"
+          },
+          {
+            "line": 24,
+            "level": 3,
+            "title": "Rationale"
+          },
+          {
+            "line": 29,
+            "level": 3,
+            "title": "Consequences"
+          },
+          {
+            "line": 33,
+            "level": 3,
+            "title": "Security implications"
+          },
+          {
+            "line": 36,
+            "level": 3,
+            "title": "Owner approval status"
+          },
+          {
+            "line": 39,
+            "level": 3,
+            "title": "Evidence references"
+          },
+          {
+            "line": 43,
+            "level": 2,
+            "title": "ADR-002 — Identity and multi-tenancy"
+          },
+          {
+            "line": 47,
+            "level": 3,
+            "title": "Context"
+          },
+          {
+            "line": 50,
+            "level": 3,
+            "title": "Options considered"
+          },
+          {
+            "line": 55,
+            "level": 3,
+            "title": "Proposed decision"
+          },
+          {
+            "line": 58,
+            "level": 3,
+            "title": "Rationale"
+          },
+          {
+            "line": 63,
+            "level": 3,
+            "title": "Consequences"
+          },
+          {
+            "line": 67,
+            "level": 3,
+            "title": "Security implications"
+          },
+          {
+            "line": 70,
+            "level": 3,
+            "title": "Owner approval status"
+          },
+          {
+            "line": 73,
+            "level": 3,
+            "title": "Evidence references"
+          },
+          {
+            "line": 76,
+            "level": 2,
+            "title": "ADR-003 — Persistence and task state"
+          },
+          {
+            "line": 80,
+            "level": 3,
+            "title": "Context"
+          },
+          {
+            "line": 83,
+            "level": 3,
+            "title": "Options considered"
+          },
+          {
+            "line": 88,
+            "level": 3,
+            "title": "Proposed decision"
+          },
+          {
+            "line": 91,
+            "level": 3,
+            "title": "Rationale"
+          },
+          {
+            "line": 96,
+            "level": 3,
+            "title": "Consequences"
+          },
+          {
+            "line": 100,
+            "level": 3,
+            "title": "Security implications"
+          },
+          {
+            "line": 103,
+            "level": 3,
+            "title": "Owner approval status"
+          },
+          {
+            "line": 106,
+            "level": 3,
+            "title": "Evidence references"
+          },
+          {
+            "line": 109,
+            "level": 2,
+            "title": "ADR-004 — AI model routing and cost control"
+          },
+          {
+            "line": 113,
+            "level": 3,
+            "title": "Context"
+          },
+          {
+            "line": 116,
+            "level": 3,
+            "title": "Options considered"
+          },
+          {
+            "line": 121,
+            "level": 3,
+            "title": "Proposed decision"
+          },
+          {
+            "line": 124,
+            "level": 3,
+            "title": "Rationale"
+          },
+          {
+            "line": 129,
+            "level": 3,
+            "title": "Consequences"
+          },
+          {
+            "line": 133,
+            "level": 3,
+            "title": "Security implications"
+          },
+          {
+            "line": 136,
+            "level": 3,
+            "title": "Owner approval status"
+          },
+          {
+            "line": 139,
+            "level": 3,
+            "title": "Evidence references"
+          },
+          {
+            "line": 142,
+            "level": 2,
+            "title": "ADR-005 — External integration governance"
+          },
+          {
+            "line": 146,
+            "level": 3,
+            "title": "Context"
+          },
+          {
+            "line": 149,
+            "level": 3,
+            "title": "Options considered"
+          },
+          {
+            "line": 154,
+            "level": 3,
+            "title": "Proposed decision"
+          },
+          {
+            "line": 157,
+            "level": 3,
+            "title": "Rationale"
+          },
+          {
+            "line": 162,
+            "level": 3,
+            "title": "Consequences"
+          },
+          {
+            "line": 166,
+            "level": 3,
+            "title": "Security implications"
+          },
+          {
+            "line": 169,
+            "level": 3,
+            "title": "Owner approval status"
+          },
+          {
+            "line": 172,
+            "level": 3,
+            "title": "Evidence references"
+          },
+          {
+            "line": 175,
+            "level": 2,
+            "title": "ADR-006 — Deployment and operational controls"
+          },
+          {
+            "line": 179,
+            "level": 3,
+            "title": "Context"
+          },
+          {
+            "line": 182,
+            "level": 3,
+            "title": "Options considered"
+          },
+          {
+            "line": 187,
+            "level": 3,
+            "title": "Proposed decision"
+          },
+          {
+            "line": 190,
+            "level": 3,
+            "title": "Rationale"
+          },
+          {
+            "line": 194,
+            "level": 3,
+            "title": "Consequences"
+          },
+          {
+            "line": 198,
+            "level": 3,
+            "title": "Security implications"
+          },
+          {
+            "line": 201,
+            "level": 3,
+            "title": "Owner approval status"
+          },
+          {
+            "line": 204,
+            "level": 3,
+            "title": "Evidence references"
+          },
+          {
+            "line": 207,
+            "level": 2,
+            "title": "ADR-SM-001 — Sales Manager authority and role boundaries"
+          },
+          {
+            "line": 211,
+            "level": 3,
+            "title": "Context"
+          },
+          {
+            "line": 214,
+            "level": 3,
+            "title": "Decision"
+          },
+          {
+            "line": 217,
+            "level": 3,
+            "title": "Rationale"
+          },
+          {
+            "line": 222,
+            "level": 3,
+            "title": "Consequences"
+          },
+          {
+            "line": 226,
+            "level": 3,
+            "title": "Security implications"
+          },
+          {
+            "line": 229,
+            "level": 3,
+            "title": "Owner approval status"
+          },
+          {
+            "line": 232,
+            "level": 3,
+            "title": "Evidence references"
+          },
+          {
+            "line": 237,
+            "level": 2,
+            "title": "Cross-ADR note"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 4,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          },
+          {
+            "line": 10,
+            "text": "**Status:** PROPOSED"
+          },
+          {
+            "line": 44,
+            "text": "**Status:** PROPOSED"
+          },
+          {
+            "line": 77,
+            "text": "**Status:** PROPOSED"
+          },
+          {
+            "line": 110,
+            "text": "**Status:** PROPOSED"
+          },
+          {
+            "line": 143,
+            "text": "**Status:** PROPOSED"
+          },
+          {
+            "line": 176,
+            "text": "**Status:** PROPOSED"
+          },
+          {
+            "line": 208,
+            "text": "**Status:** ACCEPTED / Option 1"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-002",
+          "R-003",
+          "R-006",
+          "R-009",
+          "R-013",
+          "R-014",
+          "R-015",
+          "R-017",
+          "R-018",
+          "R-019",
+          "R-020",
+          "R-025",
+          "R-026",
+          "SM-REQ-002",
+          "SM-REQ-009"
+        ],
+        "backlog_ids": [
+          "B-003",
+          "B-004",
+          "B-007",
+          "B-019",
+          "B-022"
+        ]
+      }
+    },
+    {
+      "path": "ARCHITECTURE_CONTRACTS_PROPOSED.md",
+      "size_bytes": 18062,
+      "sha256": "e9f84fa126783615f447bd0a98a5d305618ebf4b0a063d739bc77ea84dd7e8fe",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 18062,
+        "sha256": "e9f84fa126783615f447bd0a98a5d305618ebf4b0a063d739bc77ea84dd7e8fe",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Proposed Architecture Contracts"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Architectural rule set"
+          },
+          {
+            "line": 16,
+            "level": 2,
+            "title": "Contract 1 — AXIORYN AI Core runtime"
+          },
+          {
+            "line": 17,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 20,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 27,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 33,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 38,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 43,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 48,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 54,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 57,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 67,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 72,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 75,
+            "level": 3,
+            "title": "Open architecture decisions"
+          },
+          {
+            "line": 79,
+            "level": 2,
+            "title": "Contract 2 — CAI Sales Manager"
+          },
+          {
+            "line": 80,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 83,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 90,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 95,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 100,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 104,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 107,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 111,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 114,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 121,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 125,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 128,
+            "level": 3,
+            "title": "Open architecture decisions"
+          },
+          {
+            "line": 131,
+            "level": 2,
+            "title": "Contract 3 — Agent 01 commercial leadership"
+          },
+          {
+            "line": 132,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 135,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 141,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 146,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 150,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 154,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 157,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 161,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 164,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 170,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 174,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 177,
+            "level": 3,
+            "title": "Open architecture decisions"
+          },
+          {
+            "line": 180,
+            "level": 2,
+            "title": "Contract 4 — Agent 09 specialist role"
+          },
+          {
+            "line": 181,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 184,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 190,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 195,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 198,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 202,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 205,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 208,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 211,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 217,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 220,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 223,
+            "level": 3,
+            "title": "Open architecture decisions"
+          },
+          {
+            "line": 226,
+            "level": 2,
+            "title": "Contract 5 — Specialist task execution and routing"
+          },
+          {
+            "line": 227,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 230,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 235,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 240,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 244,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 248,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 252,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 255,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 258,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 265,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 268,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 271,
+            "level": 2,
+            "title": "Contract 6 — Human approval and policy enforcement"
+          },
+          {
+            "line": 272,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 275,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 281,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 285,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 289,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 293,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 296,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 299,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 302,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 308,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 311,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 314,
+            "level": 2,
+            "title": "Contract 7 — Tool gateway and external integration boundary"
+          },
+          {
+            "line": 315,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 318,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 323,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 328,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 332,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 336,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 340,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 344,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 347,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 353,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 356,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 359,
+            "level": 2,
+            "title": "Contract 8 — Audit and observability"
+          },
+          {
+            "line": 360,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 363,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 368,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 373,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 377,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 381,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 384,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 388,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 391,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 397,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 400,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 403,
+            "level": 2,
+            "title": "Contract 9 — CRM synchronization"
+          },
+          {
+            "line": 404,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 407,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 412,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 417,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 421,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 425,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 428,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 431,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 434,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 440,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 443,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 446,
+            "level": 2,
+            "title": "Contract 10 — Commercial campaign orchestration"
+          },
+          {
+            "line": 447,
+            "level": 3,
+            "title": "Component responsibility"
+          },
+          {
+            "line": 450,
+            "level": 3,
+            "title": "Inputs"
+          },
+          {
+            "line": 456,
+            "level": 3,
+            "title": "Outputs"
+          },
+          {
+            "line": 462,
+            "level": 3,
+            "title": "Data structures"
+          },
+          {
+            "line": 465,
+            "level": 3,
+            "title": "Ownership and authority boundaries"
+          },
+          {
+            "line": 469,
+            "level": 3,
+            "title": "Error and retry semantics"
+          },
+          {
+            "line": 472,
+            "level": 3,
+            "title": "Security requirements"
+          },
+          {
+            "line": 475,
+            "level": 3,
+            "title": "Human approval requirements"
+          },
+          {
+            "line": 478,
+            "level": 3,
+            "title": "Audit events"
+          },
+          {
+            "line": 485,
+            "level": 3,
+            "title": "Proposed acceptance criteria"
+          },
+          {
+            "line": 488,
+            "level": 3,
+            "title": "Related requirement IDs"
+          },
+          {
+            "line": 491,
+            "level": 2,
+            "title": "Acceptance notes"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 4,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-002",
+          "R-003",
+          "R-004",
+          "R-005",
+          "R-006",
+          "R-007",
+          "R-008",
+          "R-009",
+          "R-010",
+          "R-011",
+          "R-012",
+          "R-013",
+          "R-014",
+          "R-015",
+          "R-016",
+          "R-017",
+          "R-018",
+          "R-019",
+          "R-020",
+          "R-021",
+          "R-023",
+          "R-024",
+          "R-025",
+          "SM-REQ-001",
+          "SM-REQ-002",
+          "SM-REQ-003",
+          "SM-REQ-005",
+          "SM-REQ-006",
+          "SM-REQ-007",
+          "SM-REQ-008",
+          "SM-REQ-009",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "ARCHITECTURE_DECISION_READINESS_MATRIX.md",
+      "size_bytes": 9372,
+      "sha256": "30f186d297244b04395150b0758f4a1f359f786f820de5167897f8f337d02b2c",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 9372,
+        "sha256": "30f186d297244b04395150b0758f4a1f359f786f820de5167897f8f337d02b2c",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Architecture Decision-Readiness Matrix"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Accepted governance decisions retained as separate from proposed architecture items"
+          },
+          {
+            "line": 17,
+            "level": 2,
+            "title": "Open decision registry"
+          },
+          {
+            "line": 33,
+            "level": 2,
+            "title": "Decision registry dependencies and relationships"
+          },
+          {
+            "line": 39,
+            "level": 2,
+            "title": "Manifest convention"
+          },
+          {
+            "line": 42,
+            "level": 2,
+            "title": "Acceptance status"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 4,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          },
+          {
+            "line": 10,
+            "text": "| Decision ID | Topic | Status | Evidence |"
+          },
+          {
+            "line": 18,
+            "text": "| Decision ID | Decision topic and scope | Accountable decision owner | Supporting technical reviewer | Available alternatives | Recommended option and rationale | Dependencies / prerequisite decisions | Priority and gate | Approval status | Evidence / document references | Consequences of deferral |"
+          },
+          {
+            "line": 20,
+            "text": "| D-001 | Identity source of truth and human/service/agent identities | Project Owner | Core governance and security review | A. Enterprise IdP, B. Local auth, C. Delegated IdP | Recommended: A or B only if owner-approved; default policy is deny-by-default and Core-central authorization | Depends on ADR-SM-001 and D-002 | P0 / G0 | PROPOSED_PENDING_OWNER_CONFIRMATION | [IDENTITY_TENANT_ISOLATION_PROPOSAL.md](./IDENTITY_TENANT_ISOLATION_PROPOSAL.md) | Without an identity source of truth, RBAC and approval controls cannot be audited or enforced consistently. |"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": [
+          "B-001",
+          "B-002"
+        ]
+      }
+    },
+    {
+      "path": "ARCHITECTURE_GOVERNANCE_AGENT_REPORT.md",
+      "size_bytes": 6539,
+      "sha256": "9e9ab200bb73748bb122b5c4806fc0a5399105e6d2b85fb1e95cd2b4be55f5a3",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 6539,
+        "sha256": "9e9ab200bb73748bb122b5c4806fc0a5399105e6d2b85fb1e95cd2b4be55f5a3",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Architecture Governance Agent Report"
+          },
+          {
+            "line": 19,
+            "level": 2,
+            "title": "1. Objective and authorization"
+          },
+          {
+            "line": 36,
+            "level": 2,
+            "title": "2. Repository inventory / changes"
+          },
+          {
+            "line": 63,
+            "level": 2,
+            "title": "3. Requirement traceability"
+          },
+          {
+            "line": 73,
+            "level": 2,
+            "title": "4. Tests and verification"
+          },
+          {
+            "line": 93,
+            "level": 2,
+            "title": "5. Architecture and security review"
+          },
+          {
+            "line": 108,
+            "level": 2,
+            "title": "6. Risks, blockers and deviations"
+          },
+          {
+            "line": 116,
+            "level": 2,
+            "title": "7. Proposed master-state patch"
+          },
+          {
+            "line": 119,
+            "level": 2,
+            "title": "8. Final declaration"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 112,
+            "text": "| G-002 | MEDIUM | External integration policies remain pending legal/platform approval | EXTERNAL_INTEGRATION_GOVERNANCE_PROPOSAL.md | Require explicit owner and platform authorization |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-026",
+          "SM-REQ-001",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-022"
+        ]
+      }
+    },
+    {
+      "path": "ARCHITECTURE_TRACEABILITY.md",
+      "size_bytes": 11964,
+      "sha256": "34d33fea8675729aa14fc8ef3f2727fba6b5949e58e01f3f1561d9cd1a7cfe4d",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 11964,
+        "sha256": "34d33fea8675729aa14fc8ef3f2727fba6b5949e58e01f3f1561d9cd1a7cfe4d",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Architecture Traceability"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Scope"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Architecture contract traceability"
+          },
+          {
+            "line": 24,
+            "level": 2,
+            "title": "Requirement-to-architecture alignment"
+          },
+          {
+            "line": 55,
+            "level": 2,
+            "title": "Proposed Sales Manager requirement traceability"
+          },
+          {
+            "line": 70,
+            "level": 2,
+            "title": "NFR mapping"
+          },
+          {
+            "line": 88,
+            "level": 2,
+            "title": "Traceability to open architecture decisions"
+          },
+          {
+            "line": 104,
+            "level": 2,
+            "title": "Backlog dependency alignment"
+          },
+          {
+            "line": 128,
+            "level": 2,
+            "title": "Gaps and unresolved architecture issues"
+          },
+          {
+            "line": 135,
+            "level": 2,
+            "title": "Acceptance statement"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 4,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          },
+          {
+            "line": 11,
+            "text": "| Architecture contract | Related requirement IDs | Related Sales Manager proposal IDs | Related use cases | Related NFRs | Backlog dependencies | Status |"
+          },
+          {
+            "line": 26,
+            "text": "| Requirement ID | Architecture contract(s) | Acceptance evidence concept | Verification method | Status |"
+          },
+          {
+            "line": 57,
+            "text": "| Proposed requirement ID | Related architecture contract(s) | Related use cases | Related NFRs | Backlog references | Status |"
+          },
+          {
+            "line": 89,
+            "text": "| Decision ID | Related requirement IDs | Related NFRs | Related architecture contracts | Related backlog items | Status |"
+          },
+          {
+            "line": 106,
+            "text": "| Backlog ID | Related contract(s) | Related requirement(s) | Status |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-002",
+          "R-003",
+          "R-004",
+          "R-005",
+          "R-006",
+          "R-007",
+          "R-008",
+          "R-009",
+          "R-010",
+          "R-011",
+          "R-012",
+          "R-013",
+          "R-014",
+          "R-015",
+          "R-016",
+          "R-017",
+          "R-018",
+          "R-019",
+          "R-020",
+          "R-021",
+          "R-022",
+          "R-023",
+          "R-024",
+          "R-025",
+          "R-026",
+          "SM-REQ-001",
+          "SM-REQ-002",
+          "SM-REQ-003",
+          "SM-REQ-004",
+          "SM-REQ-005",
+          "SM-REQ-006",
+          "SM-REQ-007",
+          "SM-REQ-008",
+          "SM-REQ-009",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-002",
+          "B-003",
+          "B-004",
+          "B-005",
+          "B-006",
+          "B-007",
+          "B-008",
+          "B-009",
+          "B-010",
+          "B-011",
+          "B-012",
+          "B-013",
+          "B-014",
+          "B-015",
+          "B-016",
+          "B-017",
+          "B-018",
+          "B-019",
+          "B-020",
+          "B-021",
+          "B-022",
+          "B-023",
+          "B-024",
+          "B-025",
+          "B-026",
+          "B-027",
+          "B-028",
+          "B-029",
+          "B-030",
+          "B-031",
+          "B-032"
+        ]
+      }
+    },
+    {
+      "path": "AXIORYN _AI—MASTER_ENGINEERING&EXECUTION_PROMPT.md",
+      "size_bytes": 28891,
+      "sha256": "71e7f869f49aa6d27089da634537d76a26eb04db8e134f952c166c8665a9f567",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 28891,
+        "sha256": "71e7f869f49aa6d27089da634537d76a26eb04db8e134f952c166c8665a9f567",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — MASTER ENGINEERING & EXECUTION PROMPT"
+          },
+          {
+            "line": 2,
+            "level": 2,
+            "title": "Production-Ready Development of AXIORYN AI Sales Team"
+          },
+          {
+            "line": 14,
+            "level": 1,
+            "title": "1. YOUR ROLE AND AUTHORITY"
+          },
+          {
+            "line": 44,
+            "level": 1,
+            "title": "2. BUSINESS CONTEXT"
+          },
+          {
+            "line": 78,
+            "level": 1,
+            "title": "3. PRODUCT VISION"
+          },
+          {
+            "line": 105,
+            "level": 1,
+            "title": "4. REQUIRED PRODUCT ARCHITECTURE"
+          },
+          {
+            "line": 109,
+            "level": 2,
+            "title": "Layer A — AXIORYN AI Core Platform"
+          },
+          {
+            "line": 131,
+            "level": 2,
+            "title": "Layer B — AXIORYN AI Sales Team"
+          },
+          {
+            "line": 154,
+            "level": 1,
+            "title": "5. REQUIRED AI AGENTS"
+          },
+          {
+            "line": 171,
+            "level": 2,
+            "title": "Agent 01 — AI Executive Director"
+          },
+          {
+            "line": 188,
+            "level": 2,
+            "title": "Agent 02 — Brand Identity & LinkedIn Agent"
+          },
+          {
+            "line": 204,
+            "level": 2,
+            "title": "Agent 03 — Global Competitor Intelligence Agent"
+          },
+          {
+            "line": 246,
+            "level": 2,
+            "title": "Agent 04 — Industrial Company Discovery Agent"
+          },
+          {
+            "line": 293,
+            "level": 2,
+            "title": "Agent 05 — Contact Intelligence & Buying Committee Agent"
+          },
+          {
+            "line": 344,
+            "level": 2,
+            "title": "Agent 06 — Lead Qualification Agent"
+          },
+          {
+            "line": 370,
+            "level": 2,
+            "title": "Agent 07 — Marketing Content Intelligence Agent"
+          },
+          {
+            "line": 408,
+            "level": 2,
+            "title": "Agent 08 — Personalized Outreach Agent"
+          },
+          {
+            "line": 439,
+            "level": 2,
+            "title": "Agent 09 — Follow-up & Account Strategy Agent"
+          },
+          {
+            "line": 472,
+            "level": 2,
+            "title": "Agent 10 — CRM & Opportunity Management Agent"
+          },
+          {
+            "line": 495,
+            "level": 2,
+            "title": "Agent 11 — Sales Analytics & Optimization Agent"
+          },
+          {
+            "line": 519,
+            "level": 1,
+            "title": "6. LINKEDIN INTEGRATION POLICY"
+          },
+          {
+            "line": 544,
+            "level": 1,
+            "title": "7. CRM AND DATA MODEL"
+          },
+          {
+            "line": 589,
+            "level": 1,
+            "title": "8. TECHNICAL STACK"
+          },
+          {
+            "line": 645,
+            "level": 1,
+            "title": "9. USER INTERFACE REQUIREMENTS"
+          },
+          {
+            "line": 685,
+            "level": 1,
+            "title": "10. AI RELIABILITY AND QUALITY CONTROLS"
+          },
+          {
+            "line": 712,
+            "level": 1,
+            "title": "11. SECURITY AND COMPLIANCE"
+          },
+          {
+            "line": 736,
+            "level": 1,
+            "title": "12. PRODUCTION OPERATIONS"
+          },
+          {
+            "line": 757,
+            "level": 1,
+            "title": "13. TESTING REQUIREMENTS"
+          },
+          {
+            "line": 782,
+            "level": 1,
+            "title": "14. IMPLEMENTATION PHASES"
+          },
+          {
+            "line": 784,
+            "level": 2,
+            "title": "Phase 0 — Discovery and Technical Baseline"
+          },
+          {
+            "line": 800,
+            "level": 2,
+            "title": "Phase 1 — AXIORYN AI Core"
+          },
+          {
+            "line": 813,
+            "level": 2,
+            "title": "Phase 2 — Research and Competitive Intelligence"
+          },
+          {
+            "line": 823,
+            "level": 2,
+            "title": "Phase 3 — Contact Intelligence and CRM"
+          },
+          {
+            "line": 833,
+            "level": 2,
+            "title": "Phase 4 — Marketing and Outreach"
+          },
+          {
+            "line": 844,
+            "level": 2,
+            "title": "Phase 5 — AI Coordination and Analytics"
+          },
+          {
+            "line": 854,
+            "level": 2,
+            "title": "Phase 6 — Production Hardening"
+          },
+          {
+            "line": 866,
+            "level": 2,
+            "title": "Phase 7 — Controlled Commercial Pilot"
+          },
+          {
+            "line": 880,
+            "level": 1,
+            "title": "15. DEFINITION OF DONE"
+          },
+          {
+            "line": 898,
+            "level": 1,
+            "title": "16. REQUIRED ENGINEERING DELIVERABLES"
+          },
+          {
+            "line": 926,
+            "level": 1,
+            "title": "17. EXECUTION RULES"
+          },
+          {
+            "line": 970,
+            "level": 1,
+            "title": "18. IMMEDIATE EXECUTION INSTRUCTIONS"
+          },
+          {
+            "line": 996,
+            "level": 1,
+            "title": "19. FINAL MISSION"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 9,
+            "text": "**Project Status:** New product development"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "AXIORYN_AI_AGENT_REPORT_AGENT-20261019-001.json",
+      "size_bytes": 6841,
+      "sha256": "bc43e5a9e6fa5d85f560a46595d897a33cef60870c780a298f24562c0b0a2247",
+      "kind": "json",
+      "historical_manifest": {
+        "size_bytes": 6841,
+        "sha256": "bc43e5a9e6fa5d85f560a46595d897a33cef60870c780a298f24562c0b0a2247",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "root_type": "object",
+        "root_keys": [
+          "report_schema",
+          "task_id",
+          "report_id",
+          "related_directive",
+          "as_of_date",
+          "repository_url_or_identifier",
+          "base_commit",
+          "head_commit",
+          "branch",
+          "execution_scope",
+          "requested_status",
+          "governance_disposition",
+          "summary",
+          "requirements",
+          "files_added",
+          "files_changed",
+          "files_deleted",
+          "inventory",
+          "capability_status",
+          "commands_executed",
+          "tests",
+          "security_checks",
+          "architecture_changes",
+          "database_migrations",
+          "external_actions",
+          "known_defects",
+          "risks",
+          "blockers",
+          "assumptions",
+          "owner_approvals_needed",
+          "next_recommended_task",
+          "requirement_to_test_mapping",
+          "tests_not_run_reasons",
+          "rollback_considerations",
+          "open_questions"
+        ],
+        "summary": {
+          "report_schema": "AXAI-AGENT-REPORT-1.0",
+          "task_id": "B-001",
+          "report_id": "AGENT-20261019-001",
+          "branch": "main",
+          "execution_scope": "docs_only",
+          "requested_status": "READY_FOR_REVIEW",
+          "governance_disposition": "PENDING_OWNER_REVIEW",
+          "as_of_date": "2026-10-19"
+        },
+        "collection_counts": {
+          "requirements": 7,
+          "files_added": 1,
+          "files_changed": 2,
+          "files_deleted": 0,
+          "capability_status": 9,
+          "commands_executed": 3,
+          "tests": 1,
+          "external_actions": 1,
+          "known_defects": 0,
+          "risks": 3,
+          "blockers": 8,
+          "assumptions": 3,
+          "owner_approvals_needed": 5,
+          "requirement_to_test_mapping": 4,
+          "open_questions": 3
+        },
+        "decisions": {}
+      }
+    },
+    {
+      "path": "AXIORYN_AI_CODING_AGENT_PROMPT_001.md",
+      "size_bytes": 5376,
+      "sha256": "2a48e7d837d24946d6a2cdeb645214f4902881ddff4f90bfc967f71fd19bc21c",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 5376,
+        "sha256": "2a48e7d837d24946d6a2cdeb645214f4902881ddff4f90bfc967f71fd19bc21c",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — External Coding Agent Prompt 001"
+          },
+          {
+            "line": 8,
+            "level": 2,
+            "title": "Role"
+          },
+          {
+            "line": 11,
+            "level": 2,
+            "title": "Non-negotiable constraints"
+          },
+          {
+            "line": 19,
+            "level": 2,
+            "title": "Inputs to request/consume when authorized"
+          },
+          {
+            "line": 24,
+            "level": 2,
+            "title": "Required workflow"
+          },
+          {
+            "line": 34,
+            "level": 2,
+            "title": "Mandatory deliverables (report only)"
+          },
+          {
+            "line": 43,
+            "level": 2,
+            "title": "Acceptance criteria"
+          },
+          {
+            "line": 50,
+            "level": 2,
+            "title": "Response format"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 6,
+            "text": "**Authorization:** DO NOT EXECUTE until the owner supplies a repository/archive and explicitly authorizes this read-only audit."
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-026"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-004",
+          "B-005",
+          "B-006"
+        ]
+      }
+    },
+    {
+      "path": "AXIORYN_AI_GOVERNANCE_MASTER_v1.0.md",
+      "size_bytes": 32019,
+      "sha256": "e90eb6ed468e482e3171136599649d44f2155056ce2649996ff7cd2c8bfd3568",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 32019,
+        "sha256": "e90eb6ed468e482e3171136599649d44f2155056ce2649996ff7cd2c8bfd3568",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Engineering Governance Master Baseline"
+          },
+          {
+            "line": 8,
+            "level": 2,
+            "title": "A. ملخص للمالك / Owner Executive Summary"
+          },
+          {
+            "line": 16,
+            "level": 2,
+            "title": "1. Consolidated Project Charter"
+          },
+          {
+            "line": 35,
+            "level": 3,
+            "title": "In scope / Out of scope"
+          },
+          {
+            "line": 40,
+            "level": 3,
+            "title": "Success metrics (proposed; no observed baselines)"
+          },
+          {
+            "line": 51,
+            "level": 2,
+            "title": "2. Requirements Traceability Matrix (RTM)"
+          },
+          {
+            "line": 86,
+            "level": 2,
+            "title": "3. Proposed Architecture Governance Framework"
+          },
+          {
+            "line": 88,
+            "level": 3,
+            "title": "3.1 Logical architecture (PROPOSED; no stack chosen)"
+          },
+          {
+            "line": 110,
+            "level": 3,
+            "title": "3.2 Bounded contexts and rules"
+          },
+          {
+            "line": 122,
+            "level": 3,
+            "title": "3.3 Non-negotiable controls"
+          },
+          {
+            "line": 134,
+            "level": 3,
+            "title": "3.4 Decision control / ADR"
+          },
+          {
+            "line": 141,
+            "level": 3,
+            "title": "3.5 Roles / approval authority (proposed RACI)"
+          },
+          {
+            "line": 154,
+            "level": 2,
+            "title": "4. Phased Development Roadmap"
+          },
+          {
+            "line": 168,
+            "level": 2,
+            "title": "5. Development Backlog"
+          },
+          {
+            "line": 201,
+            "level": 2,
+            "title": "6. Coding-Agent Reporting Protocol"
+          },
+          {
+            "line": 247,
+            "level": 2,
+            "title": "7. Technical Review and Acceptance Procedure"
+          },
+          {
+            "line": 260,
+            "level": 3,
+            "title": "Release-blocking policy (proposed)"
+          },
+          {
+            "line": 267,
+            "level": 2,
+            "title": "8. Production Readiness Checklist (unverified until evidenced)"
+          },
+          {
+            "line": 291,
+            "level": 2,
+            "title": "9. Risk and Blocker Register"
+          },
+          {
+            "line": 312,
+            "level": 3,
+            "title": "Blocking unknowns / decision requests"
+          },
+          {
+            "line": 325,
+            "level": 2,
+            "title": "10. First External Coding-Agent Implementation Prompt"
+          },
+          {
+            "line": 329,
+            "level": 2,
+            "title": "11. Master State Maintenance Protocol"
+          },
+          {
+            "line": 338,
+            "level": 3,
+            "title": "Initial change log"
+          },
+          {
+            "line": 344,
+            "level": 2,
+            "title": "12. External Policy Notes (reviewed 2026-10-19)"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 3,
+            "text": "**Baseline:** GOV-1.0 | **Date:** 2026-10-19 | **Status:** Proposed governance baseline; owner approval pending"
+          },
+          {
+            "line": 33,
+            "text": "| Hard exclusions before authorization | Unapproved LinkedIn scraping/automated profile enrichment, automated unsolicited sending, live connectors, deployment, spending, importing personal data — GOVERNANCE GUARDRAIL |"
+          },
+          {
+            "line": 55,
+            "text": "| ID | Requirement / acceptance contract | Basis | Pri | Phase | Backlog | Required evidence |"
+          },
+          {
+            "line": 117,
+            "text": "| Sales CRM | accounts, contacts, opportunity records, consent/suppression references | secrets, global authorization |"
+          },
+          {
+            "line": 156,
+            "text": "| Phase / Gate | Outcome | Prerequisites | Exit evidence | Status |"
+          },
+          {
+            "line": 257,
+            "text": "9. **Disposition:** ACCEPTED / CHANGES_REQUIRED / REJECTED / BLOCKED with severity, citations to evidence and owner decision where needed."
+          },
+          {
+            "line": 289,
+            "text": "**Current checklist status:** 0 verified by reviewed project implementation evidence; items have not been individually audited against a provided repository or deployment."
+          },
+          {
+            "line": 295,
+            "text": "| ID | L×I | Risk / trigger | Mitigation and gate | Owner role | Status |"
+          },
+          {
+            "line": 323,
+            "text": "| BL-08 | Name approver(s) for scope, code acceptance, data use and production | gate authorization |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-002",
+          "R-003",
+          "R-004",
+          "R-005",
+          "R-006",
+          "R-007",
+          "R-008",
+          "R-009",
+          "R-010",
+          "R-011",
+          "R-012",
+          "R-013",
+          "R-014",
+          "R-015",
+          "R-016",
+          "R-017",
+          "R-018",
+          "R-019",
+          "R-020",
+          "R-021",
+          "R-022",
+          "R-023",
+          "R-024",
+          "R-025",
+          "R-026"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-003",
+          "B-004",
+          "B-005",
+          "B-006",
+          "B-007",
+          "B-008",
+          "B-009",
+          "B-010",
+          "B-011",
+          "B-012",
+          "B-013",
+          "B-014",
+          "B-015",
+          "B-016",
+          "B-017",
+          "B-018",
+          "B-019",
+          "B-020",
+          "B-021",
+          "B-022"
+        ]
+      }
+    },
+    {
+      "path": "AXIORYN_AI_IMPLEMENTATION_PROMPT_002_DRAFT.md",
+      "size_bytes": 5617,
+      "sha256": "314f34cf4eb19d27bd59fd16d131ec5f6567f86b6878d76a9c3a381e72174bae",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 5617,
+        "sha256": "314f34cf4eb19d27bd59fd16d131ec5f6567f86b6878d76a9c3a381e72174bae",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — First Software Implementation Prompt (Draft Only)"
+          },
+          {
+            "line": 7,
+            "level": 2,
+            "title": "Mandatory preconditions — all must be true before execution"
+          },
+          {
+            "line": 17,
+            "level": 2,
+            "title": "Objective"
+          },
+          {
+            "line": 20,
+            "level": 2,
+            "title": "Scope of implementation (only after authorization)"
+          },
+          {
+            "line": 31,
+            "level": 2,
+            "title": "Explicit exclusions"
+          },
+          {
+            "line": 39,
+            "level": 2,
+            "title": "Acceptance criteria"
+          },
+          {
+            "line": 50,
+            "level": 2,
+            "title": "Execution sequence"
+          },
+          {
+            "line": 58,
+            "level": 2,
+            "title": "Required output"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 4,
+            "text": "**Execution status:** NOT AUTHORIZED / DO NOT EXECUTE YET"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-002",
+          "R-003",
+          "R-015",
+          "R-017",
+          "R-021",
+          "R-026"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-003",
+          "B-004",
+          "B-005",
+          "B-006",
+          "B-007"
+        ]
+      }
+    },
+    {
+      "path": "AXIORYN_AI_MASTER_STATE_v1.0.json",
+      "size_bytes": 36538,
+      "sha256": "4acac031586ffc9a503547f89b3d9ad351dfb0650990da853246db7590f8ca44",
+      "kind": "json",
+      "historical_manifest": {
+        "size_bytes": 36538,
+        "sha256": "4acac031586ffc9a503547f89b3d9ad351dfb0650990da853246db7590f8ca44",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "root_type": "object",
+        "root_keys": [
+          "$schema_hint",
+          "project_id",
+          "project_name",
+          "owner",
+          "first_module",
+          "baseline_id",
+          "state_revision",
+          "as_of_date",
+          "baseline_status",
+          "implementation_status",
+          "canonical_repository",
+          "canonical_branch",
+          "head_commit_at_report",
+          "evidence_scope",
+          "confirmed_decisions",
+          "proposed_decisions",
+          "phases",
+          "requirements",
+          "backlog",
+          "risk_register",
+          "blockers",
+          "agent_reports",
+          "review_decisions",
+          "release_history",
+          "next_actions",
+          "approvals",
+          "change_log",
+          "persistence_note",
+          "report_schema_id"
+        ],
+        "summary": {
+          "state_revision": 5,
+          "baseline_id": "GOV-1.0",
+          "baseline_status": "PROPOSED_PENDING_OWNER_APPROVAL",
+          "implementation_status": "NOT_VERIFIED_NOT_AUTHORIZED",
+          "as_of_date": "2026-10-19"
+        },
+        "collection_counts": {
+          "confirmed_decisions": 11,
+          "proposed_decisions": 8,
+          "phases": 7,
+          "requirements": 26,
+          "backlog": 22,
+          "risk_register": 14,
+          "blockers": 8,
+          "agent_reports": 1,
+          "review_decisions": 1,
+          "release_history": 0,
+          "next_actions": 5,
+          "change_log": 3
+        },
+        "decisions": {
+          "confirmed_decisions": [
+            {
+              "id": "C-001"
+            },
+            {
+              "id": "C-002"
+            },
+            {
+              "id": "C-003"
+            },
+            {
+              "id": "C-004"
+            },
+            {
+              "id": "C-005"
+            },
+            {
+              "id": "C-006"
+            },
+            {
+              "id": "C-007"
+            },
+            {
+              "id": "ADR-SM-001",
+              "decision_id": "ADR-SM-001",
+              "status": "ACCEPTED",
+              "implementation_authorization": false,
+              "approval_date": "2026-10-19"
+            },
+            {
+              "id": "C-008"
+            },
+            {
+              "id": "C-009",
+              "decision_id": "B-001-DOC-ACCEPTED",
+              "status": "ACCEPTED_DOCUMENTATION_ONLY",
+              "implementation_authorization": false,
+              "approval_date": "2026-10-19"
+            },
+            {
+              "id": "C-010",
+              "decision_id": "B-002-DOC-ACCEPTED",
+              "status": "ACCEPTED_DOCUMENTATION_ONLY",
+              "implementation_authorization": false,
+              "approval_date": "2026-10-19"
+            }
+          ],
+          "proposed_decisions": [
+            {
+              "id": "ADR-001",
+              "status": "PROPOSED"
+            },
+            {
+              "id": "ADR-002",
+              "status": "PROPOSED"
+            },
+            {
+              "id": "ADR-003",
+              "status": "PROPOSED"
+            },
+            {
+              "id": "ADR-004",
+              "status": "PROPOSED"
+            },
+            {
+              "id": "ADR-005",
+              "status": "PROPOSED"
+            },
+            {
+              "id": "ADR-006",
+              "status": "PROPOSED"
+            },
+            {
+              "id": "ADR-007",
+              "status": "PROPOSED"
+            },
+            {
+              "id": "ADR-SM-001",
+              "status": "PROPOSED"
+            }
+          ],
+          "review_decisions": [
+            {
+              "decision_id": "ADR-SM-001",
+              "review_id": "OWNER-ADR-SM-001-20261019",
+              "status": "ACCEPTED",
+              "approval_date": "2026-10-19"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "B-001-CORRECTION-20261019-001.md",
+      "size_bytes": 12306,
+      "sha256": "835b63b560b1d93e15050b9a3fcee3bcaa22d5bac95c446ed4e2e38a37b149a2",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 12306,
+        "sha256": "835b63b560b1d93e15050b9a3fcee3bcaa22d5bac95c446ed4e2e38a37b149a2",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — B-001 Correction Assessment"
+          },
+          {
+            "line": 15,
+            "level": 2,
+            "title": "Executive assessment"
+          },
+          {
+            "line": 32,
+            "level": 2,
+            "title": "VERIFIED"
+          },
+          {
+            "line": 45,
+            "level": 2,
+            "title": "PROPOSED"
+          },
+          {
+            "line": 56,
+            "level": 2,
+            "title": "BLOCKED"
+          },
+          {
+            "line": 66,
+            "level": 2,
+            "title": "UNKNOWN"
+          },
+          {
+            "line": 87,
+            "level": 2,
+            "title": "Corrected B-001 disposition"
+          },
+          {
+            "line": 105,
+            "level": 2,
+            "title": "Git verification evidence"
+          },
+          {
+            "line": 144,
+            "level": 2,
+            "title": "Risk and blocker assessment"
+          },
+          {
+            "line": 160,
+            "level": 2,
+            "title": "Owner decision request"
+          }
+        ],
+        "state_revision_references": [
+          {
+            "line": 22,
+            "revision": 3,
+            "context": "by the owner decision recorded below. The current local Revision 3 state is not"
+          },
+          {
+            "line": 26,
+            "revision": 2,
+            "context": "The working-tree master state identifies Revision 2 and contains 26 existing"
+          },
+          {
+            "line": 37,
+            "revision": 2,
+            "context": "| The published `v1` tree at the verified HEAD contains 16 governance and prompt files, including the Revision 2 state and correction proposals. The separate `main` tree remains the earlier six-file baseline. | `git ls-tree -r --name-only HEAD`; GitHub remote refs |"
+          },
+          {
+            "line": 38,
+            "revision": 3,
+            "context": "| The local master-state JSON now parses as Revision 3 with 26 existing requirements (`R-001`–`R-026`), 22 existing backlog items (`B-001`–`B-022`), 14 risks, 8 blockers, and one appended owner decision record. Its baseline remains `PROPOSED_PENDING_OWNER_APPROVAL`; implementation is `NOT_VERIFIED_NOT_AUTHORIZED`. | Local JSON parsing and count output; `AXIORYN_AI_MASTER_STATE_v1.0.json` |"
+          },
+          {
+            "line": 39,
+            "revision": 2,
+            "context": "| The published `v1` state at HEAD is Revision 2 with 26 requirements and 22 backlog items. Before this owner decision was appended, the local Revision 2 state matched the `v1` state; current local Revision 3 is uncommitted and differs from published HEAD. | `git show HEAD:AXIORYN_AI_MASTER_STATE_v1.0.json`; blob IDs recorded below |"
+          },
+          {
+            "line": 39,
+            "revision": 2,
+            "context": "| The published `v1` state at HEAD is Revision 2 with 26 requirements and 22 backlog items. Before this owner decision was appended, the local Revision 2 state matched the `v1` state; current local Revision 3 is uncommitted and differs from published HEAD. | `git show HEAD:AXIORYN_AI_MASTER_STATE_v1.0.json`; blob IDs recorded below |"
+          },
+          {
+            "line": 39,
+            "revision": 3,
+            "context": "| The published `v1` state at HEAD is Revision 2 with 26 requirements and 22 backlog items. Before this owner decision was appended, the local Revision 2 state matched the `v1` state; current local Revision 3 is uncommitted and differs from published HEAD. | `git show HEAD:AXIORYN_AI_MASTER_STATE_v1.0.json`; blob IDs recorded below |"
+          },
+          {
+            "line": 42,
+            "revision": 2,
+            "context": "| The published baseline and local Revision 2 both retain the no-implementation gate. No implementation is authorized by this correction task. | Published and local master-state status fields; task constraints |"
+          },
+          {
+            "line": 68,
+            "revision": 3,
+            "context": "- Whether the owner considers the current local Revision 3 worktree or the"
+          },
+          {
+            "line": 69,
+            "revision": 2,
+            "context": "published Revision 2 `v1` state canonical. The owner selected `v1` as the"
+          },
+          {
+            "line": 81,
+            "revision": 3,
+            "context": "- Whether the local Revision 3 working-tree changes are approved as the next"
+          },
+          {
+            "line": 129,
+            "revision": 2,
+            "context": "HEAD master-state revision: 2"
+          },
+          {
+            "line": 130,
+            "revision": 3,
+            "context": "working master-state revision: 3"
+          },
+          {
+            "line": 134,
+            "revision": 2,
+            "context": "verified. The selected `v1` branch now contains a 16-file published Revision 2"
+          },
+          {
+            "line": 135,
+            "revision": 2,
+            "context": "governance set. The local Revision 2 state matched that `v1` HEAD before the"
+          },
+          {
+            "line": 136,
+            "revision": 3,
+            "context": "owner decision was appended; the current local Revision 3 state and the three"
+          }
+        ],
+        "declared_status_references": [
+          {
+            "line": 7,
+            "text": "**Disposition:** `CHANGES_REQUIRED` — preserved; B-001 remains pending owner review"
+          },
+          {
+            "line": 89,
+            "text": "**Disposition:** `CHANGES_REQUIRED / READY_FOR_OWNER_REVIEW`"
+          },
+          {
+            "line": 148,
+            "text": "| ID | Assessment | Status |"
+          },
+          {
+            "line": 164,
+            "text": "1. B-001 disposition: `ACCEPTED` or `CHANGES_REQUIRED`."
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-026",
+          "SM-REQ-001",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-022",
+          "B-023",
+          "B-032"
+        ]
+      }
+    },
+    {
+      "path": "B-002-AGENT-REPORT.md",
+      "size_bytes": 2871,
+      "sha256": "57b56ff4601a7754c66da10e482e1cf83f08617af80ee0357fe59e573b86263b",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 2871,
+        "sha256": "57b56ff4601a7754c66da10e482e1cf83f08617af80ee0357fe59e573b86263b",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — B-002 Documentation Agent Report"
+          },
+          {
+            "line": 10,
+            "level": 2,
+            "title": "Executive summary"
+          },
+          {
+            "line": 13,
+            "level": 2,
+            "title": "Deliverables created"
+          },
+          {
+            "line": 20,
+            "level": 2,
+            "title": "Governance constraints validated"
+          },
+          {
+            "line": 28,
+            "level": 2,
+            "title": "Validation notes"
+          },
+          {
+            "line": 37,
+            "level": 2,
+            "title": "Open decisions and blockers"
+          },
+          {
+            "line": 46,
+            "level": 2,
+            "title": "Final statement"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 6,
+            "text": "**Execution mode:** DOCUMENTATION ONLY"
+          },
+          {
+            "line": 7,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          },
+          {
+            "line": 8,
+            "text": "**Status:** COMPLETE / READY_FOR_REVIEW"
+          },
+          {
+            "line": 38,
+            "text": "| Item | Status | Notes |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-026"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-022"
+        ]
+      }
+    },
+    {
+      "path": "B-002-COMPLETENESS-MATRIX.md",
+      "size_bytes": 2093,
+      "sha256": "2b36137a4046f00381d01661d87687807f55459f1e3d382d9ede5804f8c47ea7",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 2093,
+        "sha256": "2b36137a4046f00381d01661d87687807f55459f1e3d382d9ede5804f8c47ea7",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — B-002 Completeness Matrix"
+          },
+          {
+            "line": 16,
+            "level": 2,
+            "title": "Deliverable coverage validation"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 3,
+            "text": "**Status:** COMPLETE / READY FOR OWNER REVIEW"
+          },
+          {
+            "line": 5,
+            "text": "| Required deliverable | File location | Status | Notes |"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": [
+          "B-002"
+        ]
+      }
+    },
+    {
+      "path": "B-002-FINDINGS-REGISTER.md",
+      "size_bytes": 3305,
+      "sha256": "7e3c51c9829e5921f1973c5f93cb6c2c895601620d23fe17ed7678f85c94c9c7",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 3305,
+        "sha256": "7e3c51c9829e5921f1973c5f93cb6c2c895601620d23fe17ed7678f85c94c9c7",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — B-002 Findings Register"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Finding B002-REV-001 — MEDIUM"
+          },
+          {
+            "line": 18,
+            "level": 2,
+            "title": "Finding B002-REV-002 — LOW"
+          },
+          {
+            "line": 27,
+            "level": 2,
+            "title": "Finding B002-REV-003 — LOW"
+          },
+          {
+            "line": 36,
+            "level": 2,
+            "title": "Verification summary"
+          },
+          {
+            "line": 41,
+            "level": 2,
+            "title": "Outstanding decision register"
+          },
+          {
+            "line": 50,
+            "level": 2,
+            "title": "Final governance note"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 3,
+            "text": "**Status:** DOCUMENTATION ONLY / VERIFIED"
+          },
+          {
+            "line": 13,
+            "text": "- Status: VERIFIED_CLOSED"
+          },
+          {
+            "line": 22,
+            "text": "- Status: VERIFIED_CLOSED"
+          },
+          {
+            "line": 31,
+            "text": "- Status: VERIFIED_CLOSED"
+          },
+          {
+            "line": 42,
+            "text": "| Item | Status |"
+          },
+          {
+            "line": 48,
+            "text": "| Implementation authorization | NOT GRANTED |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-026",
+          "SM-REQ-001",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-022",
+          "B-023",
+          "B-032"
+        ]
+      }
+    },
+    {
+      "path": "B-002-NONFUNCTIONAL-REQUIREMENTS.md",
+      "size_bytes": 5008,
+      "sha256": "a3fba559b9f0e99078f55a731758a8c7e4767ab7f6ca7e402a4b9d6354dcc4f6",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 5008,
+        "sha256": "a3fba559b9f0e99078f55a731758a8c7e4767ab7f6ca7e402a4b9d6354dcc4f6",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — B-002 Non-Functional Requirements"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Architecture constraint"
+          },
+          {
+            "line": 12,
+            "level": 2,
+            "title": "Proposed NFR catalog"
+          },
+          {
+            "line": 30,
+            "level": 2,
+            "title": "Validation expectations"
+          },
+          {
+            "line": 33,
+            "level": 2,
+            "title": "Acceptance checklist for NFRs"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 3,
+            "text": "**Status:** PROPOSED / PENDING OWNER APPROVAL"
+          },
+          {
+            "line": 14,
+            "text": "| ID | Requirement | Proposed target | Validation method | Status | Related requirements / use cases |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-002",
+          "R-003",
+          "R-004",
+          "R-009",
+          "R-011",
+          "R-012",
+          "R-013",
+          "R-014",
+          "R-015",
+          "R-017",
+          "R-018",
+          "R-020",
+          "R-022"
+        ],
+        "backlog_ids": [
+          "B-002"
+        ]
+      }
+    },
+    {
+      "path": "B-002-OWNER-DECISION-REGISTER.md",
+      "size_bytes": 4270,
+      "sha256": "658d75f691379157736619a07ab3b5c7987ff4052e55dfd26a6b7e3baecb4d23",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 4270,
+        "sha256": "658d75f691379157736619a07ab3b5c7987ff4052e55dfd26a6b7e3baecb4d23",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — B-002 Owner Decision Register"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Confirmed governance constraints"
+          },
+          {
+            "line": 17,
+            "level": 2,
+            "title": "Architecture decision summary"
+          },
+          {
+            "line": 21,
+            "level": 2,
+            "title": "Scope boundaries and exclusions"
+          },
+          {
+            "line": 22,
+            "level": 3,
+            "title": "In scope"
+          },
+          {
+            "line": 28,
+            "level": 3,
+            "title": "Out of scope"
+          },
+          {
+            "line": 36,
+            "level": 2,
+            "title": "Open owner decisions and assumptions"
+          },
+          {
+            "line": 50,
+            "level": 2,
+            "title": "Requirements acceptance checklist"
+          },
+          {
+            "line": 60,
+            "level": 2,
+            "title": "Assumptions retained for this package"
+          },
+          {
+            "line": 67,
+            "level": 2,
+            "title": "Owner authorization statement"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 3,
+            "text": "**Status:** PROPOSED / PENDING OWNER REVIEW"
+          },
+          {
+            "line": 37,
+            "text": "| Decision item | Status | Notes |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-026"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-022"
+        ]
+      }
+    },
+    {
+      "path": "B-002-TRACEABILITY-MATRIX.md",
+      "size_bytes": 8178,
+      "sha256": "15164d981768b7adaaa924b5d5ad6e21d13e7dded85f76e1f6e8495b010d94b3",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 8178,
+        "sha256": "15164d981768b7adaaa924b5d5ad6e21d13e7dded85f76e1f6e8495b010d94b3",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — B-002 Requirements Traceability Matrix"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Scope and preservation rules"
+          },
+          {
+            "line": 12,
+            "level": 2,
+            "title": "Original requirement traceability"
+          },
+          {
+            "line": 43,
+            "level": 2,
+            "title": "Proposed Sales Manager requirements traceability"
+          },
+          {
+            "line": 59,
+            "level": 2,
+            "title": "Backlog dependency summary"
+          },
+          {
+            "line": 87,
+            "level": 2,
+            "title": "Verification methods to be used in later implementation phases"
+          },
+          {
+            "line": 97,
+            "level": 2,
+            "title": "Requirements acceptance checklist"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 3,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 14,
+            "text": "| Requirement ID | Short description | Related use case(s) | Backlog dependency | Acceptance criteria | Verification method | Status |"
+          },
+          {
+            "line": 46,
+            "text": "| Proposed ID | Proposal summary | Related use case(s) | Proposed backlog | Status |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-002",
+          "R-003",
+          "R-004",
+          "R-005",
+          "R-006",
+          "R-007",
+          "R-008",
+          "R-009",
+          "R-010",
+          "R-011",
+          "R-012",
+          "R-013",
+          "R-014",
+          "R-015",
+          "R-016",
+          "R-017",
+          "R-018",
+          "R-019",
+          "R-020",
+          "R-021",
+          "R-022",
+          "R-023",
+          "R-024",
+          "R-025",
+          "R-026",
+          "SM-REQ-001",
+          "SM-REQ-002",
+          "SM-REQ-003",
+          "SM-REQ-004",
+          "SM-REQ-005",
+          "SM-REQ-006",
+          "SM-REQ-007",
+          "SM-REQ-008",
+          "SM-REQ-009",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-003",
+          "B-004",
+          "B-005",
+          "B-006",
+          "B-007",
+          "B-008",
+          "B-009",
+          "B-010",
+          "B-011",
+          "B-012",
+          "B-013",
+          "B-014",
+          "B-015",
+          "B-016",
+          "B-017",
+          "B-018",
+          "B-019",
+          "B-020",
+          "B-021",
+          "B-022",
+          "B-023",
+          "B-024",
+          "B-025",
+          "B-026",
+          "B-027",
+          "B-028",
+          "B-029",
+          "B-030",
+          "B-031",
+          "B-032"
+        ]
+      }
+    },
+    {
+      "path": "B-002-USE-CASES.md",
+      "size_bytes": 16775,
+      "sha256": "bf6ba7ac1b8585d8c7c6d8711126315a33393fc1548782763f8df1eefd526981",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 16775,
+        "sha256": "bf6ba7ac1b8585d8c7c6d8711126315a33393fc1548782763f8df1eefd526981",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — B-002 Stakeholder Use Cases"
+          },
+          {
+            "line": 7,
+            "level": 2,
+            "title": "Architecture constraints"
+          },
+          {
+            "line": 16,
+            "level": 2,
+            "title": "Scope boundary"
+          },
+          {
+            "line": 19,
+            "level": 2,
+            "title": "Use case catalog"
+          },
+          {
+            "line": 21,
+            "level": 3,
+            "title": "UC-B002-01 — Industrial B2B account discovery"
+          },
+          {
+            "line": 46,
+            "level": 3,
+            "title": "UC-B002-02 — Company and competitor intelligence"
+          },
+          {
+            "line": 67,
+            "level": 3,
+            "title": "UC-B002-03 — Buying committee identification"
+          },
+          {
+            "line": 88,
+            "level": 3,
+            "title": "UC-B002-04 — Lead qualification and prioritization"
+          },
+          {
+            "line": 109,
+            "level": 3,
+            "title": "UC-B002-05 — Commercial strategy and account planning"
+          },
+          {
+            "line": 129,
+            "level": 3,
+            "title": "UC-B002-06 — Marketing campaign planning"
+          },
+          {
+            "line": 150,
+            "level": 3,
+            "title": "UC-B002-07 — LinkedIn content and outreach preparation"
+          },
+          {
+            "line": 171,
+            "level": 3,
+            "title": "UC-B002-08 — Human approval of external communications"
+          },
+          {
+            "line": 190,
+            "level": 3,
+            "title": "UC-B002-09 — CRM synchronization"
+          },
+          {
+            "line": 209,
+            "level": 3,
+            "title": "UC-B002-10 — Intelligent follow-up"
+          },
+          {
+            "line": 228,
+            "level": 3,
+            "title": "UC-B002-11 — Commercial reporting and analytics"
+          },
+          {
+            "line": 249,
+            "level": 3,
+            "title": "UC-B002-12 — Agent supervision, audit, and exception handling"
+          },
+          {
+            "line": 271,
+            "level": 2,
+            "title": "Use-case coverage summary"
+          },
+          {
+            "line": 274,
+            "level": 2,
+            "title": "Acceptance checklist for use cases"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 3,
+            "text": "**Status:** PROPOSED / READY FOR OWNER REVIEW"
+          }
+        ],
+        "requirement_ids": [
+          "R-003",
+          "R-004",
+          "R-005",
+          "R-006",
+          "R-007",
+          "R-008",
+          "R-009",
+          "R-010",
+          "R-011",
+          "R-012",
+          "R-014",
+          "R-015",
+          "R-016",
+          "R-018",
+          "R-019",
+          "R-020",
+          "R-021",
+          "R-022",
+          "R-023",
+          "SM-REQ-001",
+          "SM-REQ-002",
+          "SM-REQ-003",
+          "SM-REQ-004",
+          "SM-REQ-005",
+          "SM-REQ-006",
+          "SM-REQ-007",
+          "SM-REQ-008",
+          "SM-REQ-009",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-002"
+        ]
+      }
+    },
+    {
+      "path": "DATA_GOVERNANCE_PROPOSAL.md",
+      "size_bytes": 4437,
+      "sha256": "ed4f99e02b66fedea945063a0e6e8ab3778c9ac053a99490ae4adce081b5f5a1",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 4437,
+        "sha256": "ed4f99e02b66fedea945063a0e6e8ab3778c9ac053a99490ae4adce081b5f5a1",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Data Governance Proposal"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Core governance principles"
+          },
+          {
+            "line": 16,
+            "level": 2,
+            "title": "Proposed data classification model"
+          },
+          {
+            "line": 17,
+            "level": 3,
+            "title": "Class A — Public / non-sensitive operational metadata"
+          },
+          {
+            "line": 26,
+            "level": 3,
+            "title": "Class B — Internal business metadata"
+          },
+          {
+            "line": 36,
+            "level": 3,
+            "title": "Class C — Sensitive commercial and relationship data"
+          },
+          {
+            "line": 48,
+            "level": 3,
+            "title": "Class D — Personal data and regulated data"
+          },
+          {
+            "line": 59,
+            "level": 2,
+            "title": "Proposed privacy and personal-data processing controls"
+          },
+          {
+            "line": 66,
+            "level": 2,
+            "title": "Proposed retention and deletion controls"
+          },
+          {
+            "line": 72,
+            "level": 2,
+            "title": "Proposed data residency controls"
+          },
+          {
+            "line": 77,
+            "level": 2,
+            "title": "Proposed secret storage and rotation"
+          },
+          {
+            "line": 83,
+            "level": 2,
+            "title": "Proposed encryption and access logging"
+          },
+          {
+            "line": 89,
+            "level": 2,
+            "title": "Open owner decisions and pending thresholds"
+          },
+          {
+            "line": 97,
+            "level": 2,
+            "title": "Acceptance status"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 4,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "DECISION_LOG.md",
+      "size_bytes": 6165,
+      "sha256": "0ef9a92a59a5719df2dd2ff743f3c9f35675c5e1bae52f9117dbf48458b50baa",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 6165,
+        "sha256": "0ef9a92a59a5719df2dd2ff743f3c9f35675c5e1bae52f9117dbf48458b50baa",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Engineering Decision Log"
+          },
+          {
+            "line": 21,
+            "level": 2,
+            "title": "ADR template"
+          },
+          {
+            "line": 26,
+            "level": 2,
+            "title": "ADR-SM-001 — Four-layer architecture and CAI Sales Manager authority"
+          },
+          {
+            "line": 65,
+            "level": 3,
+            "title": "ADR identifier mapping"
+          }
+        ],
+        "state_revision_references": [
+          {
+            "line": 16,
+            "revision": 5,
+            "context": "| ADR-SM-001 | Four-layer architecture and CAI Sales Manager / Agent 01 / Agent 09 roles | ACCEPTED — Option 1 | Project Owner approved 2026-10-19; Core retains exclusive runtime and control authority; Agent 01 is bounded commercial leadership within CAI Sales Manager; Agent 09 remains a specialist | Recorded in master-state Revision 5; no implementation authorization |"
+          }
+        ],
+        "declared_status_references": [
+          {
+            "line": 4,
+            "text": "| ID | Decision | Status | Rationale | Follow-up |"
+          },
+          {
+            "line": 16,
+            "text": "| ADR-SM-001 | Four-layer architecture and CAI Sales Manager / Agent 01 / Agent 09 roles | ACCEPTED — Option 1 | Project Owner approved 2026-10-19; Core retains exclusive runtime and control authority; Agent 01 is bounded commercial leadership within CAI Sales Manager; Agent 09 remains a specialist | Recorded in master-state Revision 5; no implementation authorization |"
+          },
+          {
+            "line": 18,
+            "text": "| B-001-DOC-ACCEPTED | B-001 accepted as documentation-only deliverable | ACCEPTED_DOCUMENTATION_ONLY | Owner accepted the B-001 deliverable for governance review only; implementation remains prohibited | Preserve acceptance evidence and no-code status |"
+          },
+          {
+            "line": 29,
+            "text": "- **Status:** ACCEPTED"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": [
+          "B-001",
+          "B-002"
+        ]
+      }
+    },
+    {
+      "path": "DEVELOPMENT_BACKLOG.md",
+      "size_bytes": 5236,
+      "sha256": "e067535bd3c20df11f3fed50cc273e8656679d12339f38410d292fb4b0f27211",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 5236,
+        "sha256": "e067535bd3c20df11f3fed50cc273e8656679d12339f38410d292fb4b0f27211",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Development Backlog"
+          },
+          {
+            "line": 24,
+            "level": 2,
+            "title": "Agent execution rule"
+          },
+          {
+            "line": 27,
+            "level": 2,
+            "title": "Additive CAI Sales Manager backlog proposal — not authorized"
+          }
+        ],
+        "state_revision_references": [
+          {
+            "line": 29,
+            "revision": 2,
+            "context": "The Revision 2 master state preserves its existing 22 ticket IDs, `B-001` through"
+          }
+        ],
+        "declared_status_references": [
+          {
+            "line": 8,
+            "text": "| GOV-003 | Reconcile master state and agent report | P0 | Source files | OPEN | Revision-consistent status |"
+          }
+        ],
+        "requirement_ids": [
+          "SM-REQ-001",
+          "SM-REQ-002",
+          "SM-REQ-003",
+          "SM-REQ-004",
+          "SM-REQ-005",
+          "SM-REQ-006",
+          "SM-REQ-007",
+          "SM-REQ-008",
+          "SM-REQ-009",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-003",
+          "B-004",
+          "B-005",
+          "B-007",
+          "B-008",
+          "B-010",
+          "B-012",
+          "B-013",
+          "B-016",
+          "B-017",
+          "B-018",
+          "B-021",
+          "B-022",
+          "B-023",
+          "B-024",
+          "B-025",
+          "B-026",
+          "B-027",
+          "B-028",
+          "B-029",
+          "B-030",
+          "B-031",
+          "B-032"
+        ]
+      }
+    },
+    {
+      "path": "EXTERNAL_INTEGRATION_GOVERNANCE_PROPOSAL.md",
+      "size_bytes": 5729,
+      "sha256": "93c10490b018d119ba7fd7b819626731599ef8cbcd50c960c88350f159e65aeb",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 5729,
+        "sha256": "93c10490b018d119ba7fd7b819626731599ef8cbcd50c960c88350f159e65aeb",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — External Integration Governance Proposal"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Governance principles"
+          },
+          {
+            "line": 16,
+            "level": 2,
+            "title": "Proposed external integration policy"
+          },
+          {
+            "line": 18,
+            "level": 3,
+            "title": "1. LinkedIn access and platform restrictions"
+          },
+          {
+            "line": 34,
+            "level": 3,
+            "title": "2. CRM integration authorization"
+          },
+          {
+            "line": 50,
+            "level": 3,
+            "title": "3. Connector allowlists"
+          },
+          {
+            "line": 61,
+            "level": 3,
+            "title": "4. OAuth and credential scoping"
+          },
+          {
+            "line": 72,
+            "level": 3,
+            "title": "5. Rate limits and provider quotas"
+          },
+          {
+            "line": 82,
+            "level": 3,
+            "title": "6. Human approval of outbound actions"
+          },
+          {
+            "line": 93,
+            "level": 3,
+            "title": "7. Revocation, incident response, and audit evidence"
+          },
+          {
+            "line": 103,
+            "level": 2,
+            "title": "Security and privacy controls"
+          },
+          {
+            "line": 109,
+            "level": 2,
+            "title": "Open owner decisions and blockers"
+          },
+          {
+            "line": 115,
+            "level": 2,
+            "title": "Acceptance status"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 4,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "FORMAL_ARCHITECTURE_CONTRACT_ADDENDUM.md",
+      "size_bytes": 4792,
+      "sha256": "0c402912ed6077a76ace3a1b83b0b0660333e20d388536731684c925a10c4cd4",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 4792,
+        "sha256": "0c402912ed6077a76ace3a1b83b0b0660333e20d388536731684c925a10c4cd4",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Formal Architecture Contract Addendum"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "1. Versioned API payload schemas (proposed)"
+          },
+          {
+            "line": 10,
+            "level": 3,
+            "title": "1.1 Common envelope"
+          },
+          {
+            "line": 30,
+            "level": 3,
+            "title": "1.2 Request/response contracts"
+          },
+          {
+            "line": 35,
+            "level": 2,
+            "title": "2. Event envelope and correlation identifiers"
+          },
+          {
+            "line": 36,
+            "level": 3,
+            "title": "Proposed event envelope"
+          },
+          {
+            "line": 56,
+            "level": 2,
+            "title": "3. Task lifecycle state machine (proposed)"
+          },
+          {
+            "line": 68,
+            "level": 2,
+            "title": "4. Retry, timeout, idempotency, and dead-letter semantics"
+          },
+          {
+            "line": 79,
+            "level": 2,
+            "title": "5. Budget and quota enforcement contracts"
+          },
+          {
+            "line": 85,
+            "level": 2,
+            "title": "6. Error taxonomy"
+          },
+          {
+            "line": 86,
+            "level": 3,
+            "title": "Categories"
+          },
+          {
+            "line": 101,
+            "level": 2,
+            "title": "7. Audit event contracts"
+          },
+          {
+            "line": 123,
+            "level": 2,
+            "title": "8. Proposed acceptance criteria for contract governance"
+          },
+          {
+            "line": 130,
+            "level": 2,
+            "title": "Open architecture decisions"
+          },
+          {
+            "line": 136,
+            "level": 2,
+            "title": "Acceptance status"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 4,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "IDENTITY_TENANT_ISOLATION_PROPOSAL.md",
+      "size_bytes": 7727,
+      "sha256": "3848e2e0a02dee44c8cb5ffd5611a15d219b1eb8f37d47ee0b663bbe04af81c4",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 7727,
+        "sha256": "3848e2e0a02dee44c8cb5ffd5611a15d219b1eb8f37d47ee0b663bbe04af81c4",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Identity and Tenant Isolation Decision Proposal"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Purpose"
+          },
+          {
+            "line": 9,
+            "level": 2,
+            "title": "Decision context"
+          },
+          {
+            "line": 18,
+            "level": 2,
+            "title": "Proposed decision"
+          },
+          {
+            "line": 19,
+            "level": 3,
+            "title": "Recommended option"
+          },
+          {
+            "line": 24,
+            "level": 2,
+            "title": "Decision options"
+          },
+          {
+            "line": 26,
+            "level": 3,
+            "title": "Option A — Shared Core identity and authorization plane with tenant-aware scopes"
+          },
+          {
+            "line": 52,
+            "level": 3,
+            "title": "Option B — Domain-owned identity with Core supervision"
+          },
+          {
+            "line": 74,
+            "level": 3,
+            "title": "Option C — No tenant-aware model; single logical environment only"
+          },
+          {
+            "line": 93,
+            "level": 2,
+            "title": "Recommended control model"
+          },
+          {
+            "line": 94,
+            "level": 3,
+            "title": "Identity model"
+          },
+          {
+            "line": 99,
+            "level": 3,
+            "title": "Authorization model"
+          },
+          {
+            "line": 105,
+            "level": 3,
+            "title": "Least-privilege requirements"
+          },
+          {
+            "line": 110,
+            "level": 3,
+            "title": "Separation of duties"
+          },
+          {
+            "line": 115,
+            "level": 3,
+            "title": "Tenant-scoped audit trails"
+          },
+          {
+            "line": 120,
+            "level": 3,
+            "title": "Cross-tenant prevention"
+          },
+          {
+            "line": 125,
+            "level": 2,
+            "title": "Security and privacy implications"
+          },
+          {
+            "line": 130,
+            "level": 2,
+            "title": "Open owner decisions and unresolved thresholds"
+          },
+          {
+            "line": 137,
+            "level": 2,
+            "title": "Decision registry cross-reference"
+          },
+          {
+            "line": 151,
+            "level": 2,
+            "title": "Acceptance status"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Status:** PROPOSED / GOVERNANCE ONLY"
+          },
+          {
+            "line": 4,
+            "text": "**Implementation authorization:** NOT GRANTED"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "MANIFEST.json",
+      "size_bytes": 7045,
+      "sha256": "ff98ad72482d1c8ee73e3b0df081605ea86db0fb7897417b484d9c0e71bcd41a",
+      "kind": "json",
+      "semantics": {
+        "root_type": "array",
+        "root_keys": [],
+        "record_count": 31
+      }
+    },
+    {
+      "path": "MASTER_REQUIREMENTS.md",
+      "size_bytes": 10460,
+      "sha256": "4ad2f379e26486848f55d680837b9cc6a7622dafed7293c374083cb14c56ed3b",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 10460,
+        "sha256": "4ad2f379e26486848f55d680837b9cc6a7622dafed7293c374083cb14c56ed3b",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Master Requirements"
+          },
+          {
+            "line": 4,
+            "level": 2,
+            "title": "Traceability conventions"
+          },
+          {
+            "line": 27,
+            "level": 2,
+            "title": "Open questions"
+          },
+          {
+            "line": 30,
+            "level": 2,
+            "title": "Completion rule"
+          },
+          {
+            "line": 33,
+            "level": 2,
+            "title": "Additive CAI Sales Manager requirements proposal — GOV-1.0 Revision 3 candidate"
+          },
+          {
+            "line": 46,
+            "level": 3,
+            "title": "Sales Manager capability gap analysis"
+          },
+          {
+            "line": 79,
+            "level": 3,
+            "title": "Traceability and governance notes"
+          }
+        ],
+        "state_revision_references": [
+          {
+            "line": 33,
+            "revision": 3,
+            "context": "## Additive CAI Sales Manager requirements proposal — GOV-1.0 Revision 3 candidate"
+          },
+          {
+            "line": 36,
+            "revision": 2,
+            "context": "existing requirements (`R-001`–`R-026`) in the Revision 2 master state."
+          },
+          {
+            "line": 48,
+            "revision": 2,
+            "context": "The existing Revision 2 `R-001`–`R-026` set establishes platform controls and"
+          },
+          {
+            "line": 89,
+            "revision": 2,
+            "context": "existing Revision 2 range `B-001`–`B-022`. They are not present in the"
+          },
+          {
+            "line": 90,
+            "revision": 1,
+            "context": "published Revision 1 repository state and are not authorized implementation"
+          }
+        ],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Baseline:** GOV-1.0 | **Status:** Draft for owner validation"
+          },
+          {
+            "line": 11,
+            "text": "| CORE-003 | Secrets, authentication and authorization | P0 | PROPOSED | Threat review and security tests |"
+          }
+        ],
+        "requirement_ids": [
+          "R-001",
+          "R-002",
+          "R-003",
+          "R-004",
+          "R-005",
+          "R-006",
+          "R-007",
+          "R-008",
+          "R-009",
+          "R-010",
+          "R-011",
+          "R-014",
+          "R-015",
+          "R-016",
+          "R-019",
+          "R-020",
+          "R-022",
+          "R-023",
+          "R-026",
+          "SM-REQ-001",
+          "SM-REQ-002",
+          "SM-REQ-003",
+          "SM-REQ-004",
+          "SM-REQ-005",
+          "SM-REQ-006",
+          "SM-REQ-007",
+          "SM-REQ-008",
+          "SM-REQ-009",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-022",
+          "B-023",
+          "B-024",
+          "B-025",
+          "B-026",
+          "B-027",
+          "B-028",
+          "B-029",
+          "B-030",
+          "B-031",
+          "B-032"
+        ]
+      }
+    },
+    {
+      "path": "PROJECT_CHARTER.md",
+      "size_bytes": 1970,
+      "sha256": "6da60e32ab4d263b521a0e5e639632df42fe20c08514f73fad5199c2475ffd1d",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 1970,
+        "sha256": "6da60e32ab4d263b521a0e5e639632df42fe20c08514f73fad5199c2475ffd1d",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Project Charter"
+          },
+          {
+            "line": 4,
+            "level": 2,
+            "title": "Mission"
+          },
+          {
+            "line": 7,
+            "level": 2,
+            "title": "Confirmed scope"
+          },
+          {
+            "line": 12,
+            "level": 2,
+            "title": "Exclusions and constraints"
+          },
+          {
+            "line": 17,
+            "level": 2,
+            "title": "Success criteria"
+          },
+          {
+            "line": 24,
+            "level": 2,
+            "title": "Roles"
+          },
+          {
+            "line": 29,
+            "level": 2,
+            "title": "Current blockers"
+          },
+          {
+            "line": 34,
+            "level": 2,
+            "title": "Change control"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Baseline:** GOV-1.0 | **Date:** 2026-10-19 | **Status:** Governance initialization"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "size_bytes": 3299,
+      "sha256": "8356cc1b36a37c7223f8bd03906b2f29efe14e0ea122e72633d99e94ccdbf4e0",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 3299,
+        "sha256": "8356cc1b36a37c7223f8bd03906b2f29efe14e0ea122e72633d99e94ccdbf4e0",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Project Status"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Confirmed"
+          },
+          {
+            "line": 16,
+            "level": 2,
+            "title": "Open / blocked"
+          },
+          {
+            "line": 24,
+            "level": 2,
+            "title": "Next gate: G0 — Initialization complete"
+          },
+          {
+            "line": 27,
+            "level": 2,
+            "title": "Reporting discipline"
+          },
+          {
+            "line": 30,
+            "level": 2,
+            "title": "B-001 correction assessment — 2026-10-19"
+          }
+        ],
+        "state_revision_references": [
+          {
+            "line": 35,
+            "revision": 2,
+            "context": "- The local working-tree master state is Revision 2 and retains 26 requirements"
+          },
+          {
+            "line": 36,
+            "revision": 1,
+            "context": "and 22 backlog items. Published `main` contains Revision 1. The local Revision"
+          }
+        ],
+        "declared_status_references": [
+          {
+            "line": 3,
+            "text": "**Phase:** Initialization / repository discovery"
+          }
+        ],
+        "requirement_ids": [
+          "SM-REQ-001",
+          "SM-REQ-010"
+        ],
+        "backlog_ids": [
+          "B-001",
+          "B-002",
+          "B-003",
+          "B-004",
+          "B-023",
+          "B-032"
+        ]
+      }
+    },
+    {
+      "path": "RELEASE_CHECKLIST.md",
+      "size_bytes": 1781,
+      "sha256": "db8f86aaea031618447672aa895153e4c67caf343f3171c884b0e449291ce98e",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 1781,
+        "sha256": "db8f86aaea031618447672aa895153e4c67caf343f3171c884b0e449291ce98e",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — Production Release Checklist"
+          },
+          {
+            "line": 6,
+            "level": 2,
+            "title": "Governance"
+          },
+          {
+            "line": 12,
+            "level": 2,
+            "title": "Functional quality"
+          },
+          {
+            "line": 19,
+            "level": 2,
+            "title": "Security and compliance"
+          },
+          {
+            "line": 27,
+            "level": 2,
+            "title": "Reliability and operations"
+          },
+          {
+            "line": 35,
+            "level": 2,
+            "title": "Deployment"
+          },
+          {
+            "line": 42,
+            "level": 2,
+            "title": "Decision record"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Baseline:** GOV-1.0 | **Release:** TBD | **Status:** NOT READY"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": []
+      }
+    },
+    {
+      "path": "SYSTEM_ARCHITECTURE.md",
+      "size_bytes": 7845,
+      "sha256": "a27de0c32c63589cb8cc96baa838ac6f9c81233944b1aae37d84991f166212be",
+      "kind": "markdown",
+      "historical_manifest": {
+        "size_bytes": 7845,
+        "sha256": "a27de0c32c63589cb8cc96baa838ac6f9c81233944b1aae37d84991f166212be",
+        "matches_size": true,
+        "matches_sha256": true
+      },
+      "semantics": {
+        "headings": [
+          {
+            "line": 1,
+            "level": 1,
+            "title": "AXIORYN AI — System Architecture"
+          },
+          {
+            "line": 4,
+            "level": 2,
+            "title": "Architecture principles"
+          },
+          {
+            "line": 7,
+            "level": 2,
+            "title": "Proposed logical components"
+          },
+          {
+            "line": 31,
+            "level": 2,
+            "title": "Core contracts (proposed)"
+          },
+          {
+            "line": 37,
+            "level": 2,
+            "title": "Data and security"
+          },
+          {
+            "line": 40,
+            "level": 2,
+            "title": "Reliability"
+          },
+          {
+            "line": 43,
+            "level": 2,
+            "title": "Architecture decision gates"
+          },
+          {
+            "line": 46,
+            "level": 2,
+            "title": "Branch policy (owner-approved)"
+          },
+          {
+            "line": 49,
+            "level": 2,
+            "title": "Validation"
+          },
+          {
+            "line": 52,
+            "level": 2,
+            "title": "Four-layer architecture decision — ADR-SM-001"
+          },
+          {
+            "line": 83,
+            "level": 3,
+            "title": "Core runtime versus commercial decisions"
+          },
+          {
+            "line": 99,
+            "level": 3,
+            "title": "Agent and role decision"
+          },
+          {
+            "line": 119,
+            "level": 3,
+            "title": "Owner decision options"
+          }
+        ],
+        "state_revision_references": [],
+        "declared_status_references": [
+          {
+            "line": 2,
+            "text": "**Baseline:** GOV-1.0 | **Status:** PROPOSED, not approved"
+          },
+          {
+            "line": 54,
+            "text": "**Status:** ACCEPTED by Project Owner, Option 1, 2026-10-19. This is an"
+          }
+        ],
+        "requirement_ids": [],
+        "backlog_ids": [
+          "B-001"
+        ]
+      }
+    }
+  ]
+}

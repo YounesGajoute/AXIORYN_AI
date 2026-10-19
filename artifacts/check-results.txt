@@ -1,0 +1,5 @@
+
+> axioryn-ai@0.1.0 check
+> node scripts/check.mjs
+
+PASS: package metadata, required public assets and syntax of 17 JavaScript files. Application tests are run separately with npm test.

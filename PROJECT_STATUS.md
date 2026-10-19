@@ -7,6 +7,10 @@
 - Product: AXIORYN AI; initial module: AXIORYN AI Sales Team.
 - Repository URL supplied by owner: https://github.com/YounesGajoute/AXIORYN_AI.git
 - Governance rule: no software implementation during initialization.
+- Owner decision ADR-SM-001 accepted: Agent 01 is the bounded commercial leadership role within CAI Sales Manager; Agent 09 remains a specialist; Core retains exclusive technical runtime and control authority.
+- Owner decision B-001 accepted as documentation only: ACCEPTED_DOCUMENTATION_ONLY, 2026-10-19. This is not implementation authorization.
+- Owner decision B-002 accepted as documentation only: ACCEPTED_DOCUMENTATION_ONLY, 2026-10-19. This is not implementation authorization.
+- Branch Policy Option A: main is the canonical project branch; v1 is the governance preparation and review branch; no commit, push, merge, reset, or branch switching is authorized without explicit owner review.
 - Previous project context referenced master state revisions 1 and 2; authoritative current revision must be reconciled against source artifacts.
 
 ## Open / blocked
@@ -34,9 +38,9 @@ Do not mark tasks DONE based on narrative alone. Require commit identifiers, cha
 - B-001 is **not accepted**. Recommended disposition is
   `CHANGES_REQUIRED / READY_FOR_OWNER_REVIEW`; see
   [B-001 correction assessment](./B-001-CORRECTION-20261019-001.md).
-- The four-layer architecture and CAI Sales Manager role reconciliation,
-  `SM-REQ-001`–`SM-REQ-010`, and `B-023`–`B-032` are proposals pending explicit
-  owner decision.
+- ADR-SM-001 Option 1 is accepted by the Project Owner on 2026-10-19. The
+  additive `SM-REQ-001`–`SM-REQ-010` and `B-023`–`B-032` remain proposals
+  pending approval for a future governance revision.
 - GOV-1.0 remains `PENDING_OWNER_APPROVAL`; implementation remains
   `NOT_AUTHORIZED`. No commit, push, test execution or external integration is
   authorized by this status update.

@@ -1,0 +1,75 @@
+{
+  "report_schema": "AXAI-AGENT-REPORT-1.0",
+  "report_id": "AGENT-20261019-LOCAL-APP",
+  "date": "2026-10-19",
+  "task_id": "OWNER-FULL-APP-REQUEST",
+  "execution_scope": "authorized_code",
+  "requested_status": "READY_FOR_REVIEW",
+  "local_delivery_status": "IMPLEMENTED_AND_TESTED",
+  "production_status": "NOT_CERTIFIED",
+  "master_state_revision_seen": 5,
+  "branch": "v1",
+  "base_commit": "1fe25d6e88d38af919071c9012e414d2255f7a69",
+  "head_commit": "1fe25d6e88d38af919071c9012e414d2255f7a69",
+  "authorization": "The user requested deep analysis of all files and implementation of the full app, then instructed continuation. This authorizes local development and verification; historical approvals were not retroactively granted.",
+  "summary": "Analyzed all 32 original root documents and built a runnable local sales application with 15 navigation destinations, 11 agents, persistent CRM and planning records, human approvals, policy-checked local simulation, optional owner-confirmed AI, audit, portability, backups and reproducible tests.",
+  "preservation": {
+    "original_documents": 32,
+    "historical_manifest_entries_matched": 31,
+    "historical_hash_mismatches": 0,
+    "preexisting_user_changes_preserved": true,
+    "original_documents_modified_by_this_task": false,
+    "commit_push_merge_reset_branch_switch": false
+  },
+  "architecture_changes": [
+    "LOCAL-ADR-001: Node.js 24.3+ and buildless browser UI with SQLite for the local release; exact production stack is not asserted approved.",
+    "Core owns versioned registry and bounded capability checks; Sales owns eleven versioned specialist templates.",
+    "Optional OpenAI Responses adapter is default-disabled, owner-confirmed per call and separate from agent tool authority.",
+    "SQLite schema version 1; HTTP routes remain an internal unversioned /api interface."
+  ],
+  "validation": {
+    "runtime": "Windows / Node.js 24.3.0 / npm 11.4.2",
+    "source_check": { "command": "npm run check", "exit_code": 0, "javascript_files": 17, "evidence": "artifacts/check-results.txt" },
+    "automated_tests": { "command": "npm test", "exit_code": 0, "total": 52, "passed": 52, "failed": 0, "cancelled": 0, "skipped": 0, "evidence": "artifacts/test-results.txt" },
+    "browser": { "status": "PASS_FOR_PERFORMED_CHECKS", "desktop": "1440x1000", "phone": "390x844", "destinations": 15, "observed_console_errors": 0, "evidence": "docs/verification.md" },
+    "backup_restore": { "status": "PASS_LOCAL_FIXTURE", "restored_rows": 500, "integrity": "ok", "test": "tests/backup.test.mjs" },
+    "startup": { "health_http": 200, "first_run_setup_required": true, "owner_account_created_in_default_workspace": false }
+  },
+  "security_review": {
+    "review_mode": "Independent agent review plus negative and concurrency regressions",
+    "fixed_findings": [
+      "Stale requests could overwrite a newer draft or rerun a completed task.",
+      "In-flight mutations could survive session revocation.",
+      "Approved campaign changes needed bounded owner authority and review invalidation.",
+      "Some mutations could survive audit persistence failure.",
+      "Strict stylesheet policy blocked dynamic inline chart sizing.",
+      "Optional provider transport needed fail-closed redirects and streaming byte limits."
+    ],
+    "evidence": ["tests/security.test.mjs", "tests/provider-security.test.mjs", "tests/providers.test.mjs", "tests/ui.test.mjs"]
+  },
+  "external_actions": {
+    "documentation_browsing": "Official Node.js and OpenAI documentation inspected.",
+    "paid_model_requests": 0,
+    "external_sales_messages": 0,
+    "linkedin_publications": 0,
+    "external_crm_writes": 0,
+    "deployments": 0
+  },
+  "not_verified": [
+    "Real OpenAI model access, paid requests and factual quality evaluations.",
+    "Authorized research, LinkedIn, email and external CRM adapters.",
+    "Hosted CI execution, production deployment, load targets and infrastructure recovery objectives.",
+    "Production SSO/recovery, storage encryption, retention/residency policy and external audit immutability."
+  ],
+  "handover": {
+    "start": "npm start or Start-AXIORYN.cmd",
+    "url": "http://127.0.0.1:3000",
+    "credentials": "Create your own owner account in the first-run form. No default credentials.",
+    "temporary_previews_stopped": true,
+    "guide": "README.md",
+    "requirements": "docs/requirements-analysis.md",
+    "coverage": "docs/feature-coverage.md",
+    "operations": "docs/operations.md"
+  },
+  "rollback_considerations": "New application files are additive. Preserve the data directory and make a verified backup before application/database changes. Restore to a separate database path for verification. Do not reset or discard the pre-existing working-tree changes."
+}
