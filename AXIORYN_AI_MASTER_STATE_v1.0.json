@@ -1,0 +1,997 @@
+{
+  "$schema_hint": "AXAI-MASTER-STATE-1.0 (project-specific structure, not an externally registered JSON schema)",
+  "project_id": "AXAI",
+  "project_name": "AXIORYN AI",
+  "owner": "AXIORYN Engineering Systems",
+  "first_module": "AXIORYN AI Sales Team",
+  "baseline_id": "GOV-1.0",
+  "state_revision": 1,
+  "as_of_date": "2026-10-19",
+  "baseline_status": "PROPOSED_PENDING_OWNER_APPROVAL",
+  "implementation_status": "NOT_VERIFIED_NOT_AUTHORIZED",
+  "evidence_scope": {
+    "observed": "Project conversation governance instructions and accessible metadata; no project repository, implementation tests, deployment or project-specific technical files verified.",
+    "excluded": "Unrelated Library documents (AAB-5000).",
+    "external_sources": [
+      "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+      "https://learn.microsoft.com/en-us/linkedin/marketing/restricted-use-cases",
+      "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/legal-grounds-processing-data_en"
+    ]
+  },
+  "confirmed_decisions": [
+    {
+      "id": "C-001",
+      "text": "AXIORYN Engineering Systems owns AXIORYN AI."
+    },
+    {
+      "id": "C-002",
+      "text": "AXIORYN AI has a reusable extensible multi-agent Core."
+    },
+    {
+      "id": "C-003",
+      "text": "AXIORYN AI Sales Team is the first business module."
+    },
+    {
+      "id": "C-004",
+      "text": "Initial business objectives include industrial B2B research, LinkedIn marketing, competitor intelligence, lead discovery, buying committee mapping, CRM, personalized outreach and follow-up."
+    },
+    {
+      "id": "C-005",
+      "text": "The governance assistant audits agent evidence, controls scope and gates, and prepares prompts."
+    },
+    {
+      "id": "C-006",
+      "text": "No software implementation is to begin during project initialization."
+    }
+  ],
+  "proposed_decisions": [
+    {
+      "id": "ADR-001",
+      "topic": "Repository/runtime strategy",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ADR-002",
+      "topic": "Identity and organization boundaries",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ADR-003",
+      "topic": "Persistence and job infrastructure",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ADR-004",
+      "topic": "Model provider and data policy",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ADR-005",
+      "topic": "Deployment and data residency",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ADR-006",
+      "topic": "Permitted external sources and LinkedIn",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "ADR-007",
+      "topic": "CRM and email providers",
+      "status": "PROPOSED"
+    }
+  ],
+  "phases": [
+    {
+      "id": "F0",
+      "gate": "G0",
+      "status": "IN_PROGRESS",
+      "accepted": false
+    },
+    {
+      "id": "F1",
+      "gate": "G1",
+      "status": "NOT_STARTED",
+      "accepted": false
+    },
+    {
+      "id": "F2",
+      "gate": "G2",
+      "status": "NOT_STARTED",
+      "accepted": false
+    },
+    {
+      "id": "F3",
+      "gate": "G3",
+      "status": "NOT_STARTED",
+      "accepted": false
+    },
+    {
+      "id": "F4",
+      "gate": "G4",
+      "status": "NOT_STARTED",
+      "accepted": false
+    },
+    {
+      "id": "F5",
+      "gate": "G5",
+      "status": "NOT_STARTED",
+      "accepted": false
+    },
+    {
+      "id": "F6",
+      "gate": "G6",
+      "status": "NOT_STARTED",
+      "accepted": false
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R-001",
+      "description": "Core SHALL expose versioned module boundaries; Sales Team SHALL not own shared identity, audit or policy services.",
+      "basis": "C + P design",
+      "priority": "P0",
+      "phase": "F1",
+      "backlog_ids": [
+        "B-005",
+        "B-006"
+      ],
+      "acceptance_evidence": "architecture test + interface map",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-002",
+      "description": "Core SHALL isolate agent identity, tool permissions, inputs, outputs and execution budgets.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F1",
+      "backlog_ids": [
+        "B-007"
+      ],
+      "acceptance_evidence": "deny-by-default tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-003",
+      "description": "All external write actions SHALL require policy evaluation, auditable owner/operator approval and idempotency.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F1/F4",
+      "backlog_ids": [
+        "B-008",
+        "B-017"
+      ],
+      "acceptance_evidence": "negative/approval/replay tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-004",
+      "description": "System SHALL manage accounts and contacts with source/provenance, purpose, retention and suppression state.",
+      "basis": "C + P design",
+      "priority": "P0",
+      "phase": "F2",
+      "backlog_ids": [
+        "B-010"
+      ],
+      "acceptance_evidence": "entity/integration tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-005",
+      "description": "Sales Team SHALL support CRM lifecycle with configurable status and duplicate detection.",
+      "basis": "C",
+      "priority": "P1",
+      "phase": "F2",
+      "backlog_ids": [
+        "B-011"
+      ],
+      "acceptance_evidence": "scenario tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-006",
+      "description": "Sales Team SHALL support industry-specific lead research from approved sources, without assuming any source-access entitlement.",
+      "basis": "C",
+      "priority": "P1",
+      "phase": "F3",
+      "backlog_ids": [
+        "B-013"
+      ],
+      "acceptance_evidence": "provenance + policy validation",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-007",
+      "description": "Sales Team SHALL represent a buying committee with roles and evidence/confidence attributes.",
+      "basis": "C",
+      "priority": "P1",
+      "phase": "F3",
+      "backlog_ids": [
+        "B-014"
+      ],
+      "acceptance_evidence": "schema + scenario tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-008",
+      "description": "Sales Team SHALL provide competitor analysis with dates, source links and uncertainty labels.",
+      "basis": "C",
+      "priority": "P1",
+      "phase": "F3",
+      "backlog_ids": [
+        "B-015"
+      ],
+      "acceptance_evidence": "research evaluation set",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-009",
+      "description": "Sales Team SHALL support LinkedIn marketing only through explicitly approved product capabilities, permissions and flows.",
+      "basis": "C with external constraint",
+      "priority": "P0",
+      "phase": "F0/F5",
+      "backlog_ids": [
+        "B-003",
+        "B-019"
+      ],
+      "acceptance_evidence": "platform terms review + auth tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-010",
+      "description": "Sales Team SHALL draft personalized outreach grounded in approved sources and show citations/uncertainty before approval.",
+      "basis": "C + P controls",
+      "priority": "P1",
+      "phase": "F4",
+      "backlog_ids": [
+        "B-016"
+      ],
+      "acceptance_evidence": "evaluation + prompt injection tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-011",
+      "description": "Follow-up workflows SHALL respect opt-out, frequency caps, quiet windows and human-reviewed external sending.",
+      "basis": "C + P controls",
+      "priority": "P0",
+      "phase": "F4",
+      "backlog_ids": [
+        "B-018"
+      ],
+      "acceptance_evidence": "policy + opt-out tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-012",
+      "description": "A CRM sync adapter SHALL be optional, scoped and resilient to partial failure; vendor not yet chosen.",
+      "basis": "P",
+      "priority": "P1",
+      "phase": "F5",
+      "backlog_ids": [
+        "B-020"
+      ],
+      "acceptance_evidence": "contract/sync reconciliation tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-013",
+      "description": "Personal data SHALL use least privilege, retention/deletion policy and export/access logs.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F1/F2",
+      "backlog_ids": [
+        "B-009",
+        "B-010"
+      ],
+      "acceptance_evidence": "security and deletion tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-014",
+      "description": "Operators SHALL inspect task state, decisions, approval requests and audit records.",
+      "basis": "P",
+      "priority": "P1",
+      "phase": "F4",
+      "backlog_ids": [
+        "B-012",
+        "B-017"
+      ],
+      "acceptance_evidence": "UI acceptance test",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-015",
+      "description": "Agent execution SHALL have trace IDs, capped retries, timeout, cancellation and dead-letter handling.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F1",
+      "backlog_ids": [
+        "B-007"
+      ],
+      "acceptance_evidence": "fault-injection tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-016",
+      "description": "Evaluation SHALL detect fabricated sources, tool misuse, prompt injection and invalid structured output.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F3/F4",
+      "backlog_ids": [
+        "B-021"
+      ],
+      "acceptance_evidence": "versioned evaluation report",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-017",
+      "description": "Secrets SHALL be managed separately from code; logs SHALL mask sensitive content.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F1",
+      "backlog_ids": [
+        "B-009"
+      ],
+      "acceptance_evidence": "secret-scan + logging tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-018",
+      "description": "Backups, observability, rollback, incident response and restore proof SHALL precede release.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F6",
+      "backlog_ids": [
+        "B-022"
+      ],
+      "acceptance_evidence": "restore + rollback evidence",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-019",
+      "description": "Each release SHALL include reproducible tests and explicit owner acceptance.",
+      "basis": "C governance mission + P process",
+      "priority": "P0",
+      "phase": "All",
+      "backlog_ids": [
+        "B-004"
+      ],
+      "acceptance_evidence": "release sign-off",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-020",
+      "description": "External connectors SHALL be disabled by default and operable only with approved scope and credentials.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F5",
+      "backlog_ids": [
+        "B-019",
+        "B-020"
+      ],
+      "acceptance_evidence": "permission matrix + sandbox tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-021",
+      "description": "AI models SHALL be replaceable via provider abstraction and prompts SHALL be version controlled.",
+      "basis": "P",
+      "priority": "P1",
+      "phase": "F1/F3",
+      "backlog_ids": [
+        "B-006",
+        "B-021"
+      ],
+      "acceptance_evidence": "contract tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-022",
+      "description": "System SHALL meet owner-approved performance, recovery and cost guardrails before GA; numerical targets unresolved.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F0/F6",
+      "backlog_ids": [
+        "B-002",
+        "B-022"
+      ],
+      "acceptance_evidence": "signed NFR baseline + load tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-023",
+      "description": "Human decisions, model outputs and source evidence SHALL be distinguishable in UI and audit trail.",
+      "basis": "P",
+      "priority": "P1",
+      "phase": "F3/F4",
+      "backlog_ids": [
+        "B-012",
+        "B-021"
+      ],
+      "acceptance_evidence": "UX/evaluation test",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-024",
+      "description": "Import/export of authorized records SHALL use validated schemas and per-record authorization.",
+      "basis": "P",
+      "priority": "P1",
+      "phase": "F2/F5",
+      "backlog_ids": [
+        "B-011",
+        "B-020"
+      ],
+      "acceptance_evidence": "contract/privacy tests",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-025",
+      "description": "Retention and data residency SHALL be approved against applicable jurisdictions before live data collection.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F0",
+      "backlog_ids": [
+        "B-003"
+      ],
+      "acceptance_evidence": "compliance decision record",
+      "status": "DRAFT",
+      "verified_evidence": []
+    },
+    {
+      "id": "R-026",
+      "description": "Versioned API and database migration contracts SHALL preserve downgrade/rollback or documented recovery.",
+      "basis": "P",
+      "priority": "P0",
+      "phase": "F1/F6",
+      "backlog_ids": [
+        "B-006",
+        "B-022"
+      ],
+      "acceptance_evidence": "migration/rollback test",
+      "status": "DRAFT",
+      "verified_evidence": []
+    }
+  ],
+  "backlog": [
+    {
+      "id": "B-001",
+      "title": "Repository and existing-code inventory (read only)",
+      "priority": "P0",
+      "dependencies": [],
+      "other_dependencies": "Owner provides repo",
+      "status": "BLOCKED",
+      "completion_evidence": "inventory + gaps, no edits",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-002",
+      "title": "Stakeholder use cases, scope and NFR baselines",
+      "priority": "P0",
+      "dependencies": [
+        "B-001"
+      ],
+      "other_dependencies": "B-001",
+      "status": "NOT_STARTED",
+      "completion_evidence": "signed product/NFR register",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-003",
+      "title": "Legal, platform, source-permission & retention assessment",
+      "priority": "P0",
+      "dependencies": [
+        "B-002"
+      ],
+      "other_dependencies": "B-002",
+      "status": "NOT_STARTED",
+      "completion_evidence": "permitted-use matrix and blockers",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-004",
+      "title": "RTM, quality gates and governance repo structure",
+      "priority": "P0",
+      "dependencies": [
+        "B-001",
+        "B-002"
+      ],
+      "other_dependencies": "B-001,B-002",
+      "status": "NOT_STARTED",
+      "completion_evidence": "reviewed traceability/ADR templates",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-005",
+      "title": "Core vs Sales bounded-context contracts",
+      "priority": "P0",
+      "dependencies": [
+        "B-002",
+        "B-004"
+      ],
+      "other_dependencies": "B-002,B-004",
+      "status": "NOT_STARTED",
+      "completion_evidence": "reviewed diagrams + contract tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-006",
+      "title": "Authorized foundation project structure, API schemas and migration strategy",
+      "priority": "P0",
+      "dependencies": [
+        "B-005"
+      ],
+      "other_dependencies": "B-005,ADR-001..003 approved",
+      "status": "NOT_STARTED",
+      "completion_evidence": "build + test artifacts",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-007",
+      "title": "Agent/tool execution gateway & durable task lifecycle",
+      "priority": "P0",
+      "dependencies": [
+        "B-006"
+      ],
+      "other_dependencies": "B-006",
+      "status": "NOT_STARTED",
+      "completion_evidence": "deny, retry, timeout, cancellation tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-008",
+      "title": "Deterministic policy/approval service",
+      "priority": "P0",
+      "dependencies": [
+        "B-006",
+        "B-007"
+      ],
+      "other_dependencies": "B-006,B-007",
+      "status": "NOT_STARTED",
+      "completion_evidence": "policy evaluation and replay tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-009",
+      "title": "Authentication, least privilege, secret hygiene, redacted audit",
+      "priority": "P0",
+      "dependencies": [
+        "B-006",
+        "B-008"
+      ],
+      "other_dependencies": "B-006,B-008",
+      "status": "NOT_STARTED",
+      "completion_evidence": "auth, access, secret scan tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-010",
+      "title": "Account/contact source, purpose, retention, opt-out model",
+      "priority": "P0",
+      "dependencies": [
+        "B-005",
+        "B-009",
+        "B-003"
+      ],
+      "other_dependencies": "B-005,B-009,B-003",
+      "status": "NOT_STARTED",
+      "completion_evidence": "data privacy & lifecycle tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-011",
+      "title": "CRM CRUD/state transition/duplicate resolution",
+      "priority": "P1",
+      "dependencies": [
+        "B-010"
+      ],
+      "other_dependencies": "B-010",
+      "status": "NOT_STARTED",
+      "completion_evidence": "accepted scenarios + migration tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-012",
+      "title": "Owner/operator review and audit UI",
+      "priority": "P1",
+      "dependencies": [
+        "B-008",
+        "B-009"
+      ],
+      "other_dependencies": "B-008,B-009",
+      "status": "NOT_STARTED",
+      "completion_evidence": "UI acceptance and accessibility checks",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-013",
+      "title": "Licensed-source research ingestion & provenance",
+      "priority": "P1",
+      "dependencies": [
+        "B-003",
+        "B-007",
+        "B-010"
+      ],
+      "other_dependencies": "B-003,B-007,B-010",
+      "status": "NOT_STARTED",
+      "completion_evidence": "licensed source adapter and source tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-014",
+      "title": "Buying committee schema and evidence workflows",
+      "priority": "P1",
+      "dependencies": [
+        "B-011",
+        "B-013"
+      ],
+      "other_dependencies": "B-011,B-013",
+      "status": "NOT_STARTED",
+      "completion_evidence": "role/confidence scenario tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-015",
+      "title": "Competitor intelligence and time-stamped evidence",
+      "priority": "P1",
+      "dependencies": [
+        "B-013"
+      ],
+      "other_dependencies": "B-013",
+      "status": "NOT_STARTED",
+      "completion_evidence": "validated intelligence report tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-016",
+      "title": "Personalized draft generation; grounded citations and warnings",
+      "priority": "P1",
+      "dependencies": [
+        "B-013",
+        "B-014",
+        "B-021"
+      ],
+      "other_dependencies": "B-013,B-014,B-021",
+      "status": "NOT_STARTED",
+      "completion_evidence": "golden-set/evaluation results",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-017",
+      "title": "Exact-message/recipient/channel human approval gate",
+      "priority": "P0",
+      "dependencies": [
+        "B-008",
+        "B-012",
+        "B-016"
+      ],
+      "other_dependencies": "B-008,B-012,B-016",
+      "status": "NOT_STARTED",
+      "completion_evidence": "allow/deny and approval-expiry tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-018",
+      "title": "Follow-up scheduler, suppression and kill switch",
+      "priority": "P0",
+      "dependencies": [
+        "B-010",
+        "B-017"
+      ],
+      "other_dependencies": "B-010,B-017",
+      "status": "NOT_STARTED",
+      "completion_evidence": "opt-out, quiet-window, dedup tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-019",
+      "title": "External permission readiness and approved LinkedIn adapter design",
+      "priority": "P0",
+      "dependencies": [
+        "B-003",
+        "B-009"
+      ],
+      "other_dependencies": "B-003,B-009",
+      "status": "NOT_STARTED",
+      "completion_evidence": "permission / platform compliance proof",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-020",
+      "title": "Optional CRM/email sandbox connector with reconciliations",
+      "priority": "P1",
+      "dependencies": [
+        "B-011",
+        "B-017",
+        "B-019"
+      ],
+      "other_dependencies": "B-011,B-017,B-019",
+      "status": "NOT_STARTED",
+      "completion_evidence": "sandbox contract + failure-retry tests",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-021",
+      "title": "Agent quality, injection, misuse and prompt/model version evaluation harness",
+      "priority": "P0",
+      "dependencies": [
+        "B-007",
+        "B-013"
+      ],
+      "other_dependencies": "B-007,B-013",
+      "status": "NOT_STARTED",
+      "completion_evidence": "labeled evaluation suite and failing-case report",
+      "report_ids": [],
+      "review_ids": []
+    },
+    {
+      "id": "B-022",
+      "title": "Production runbooks, security, observability, backup and release proof",
+      "priority": "P0",
+      "dependencies": [
+        "B-009",
+        "B-018",
+        "B-020",
+        "B-021"
+      ],
+      "other_dependencies": "B-009,B-018,B-020,B-021",
+      "status": "NOT_STARTED",
+      "completion_evidence": "signed release package and restore drill",
+      "report_ids": [],
+      "review_ids": []
+    }
+  ],
+  "risk_register": [
+    {
+      "id": "RK-01",
+      "score_proposed": "5×5",
+      "risk": "LinkedIn capability/API or data-use restriction",
+      "mitigation": "R-009; verify entitlements and permissible uses; approved alternatives only",
+      "role": "Owner + legal/integrations",
+      "status": "OPEN/BLOCKER for LinkedIn connector"
+    },
+    {
+      "id": "RK-02",
+      "score_proposed": "4×5",
+      "risk": "Privacy and unlawful contact processing",
+      "mitigation": "purpose/source register, minimization, deletion, suppression, jurisdiction review",
+      "role": "Owner + privacy",
+      "status": "OPEN/BLOCKER for live personal data"
+    },
+    {
+      "id": "RK-03",
+      "score_proposed": "4×5",
+      "risk": "Unapproved external outreach/spam",
+      "mitigation": "deterministic approval and suppression, disabled-by-default connectors",
+      "role": "Engineering",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-04",
+      "score_proposed": "4×5",
+      "risk": "LLM hallucinated facts, buying committee roles",
+      "mitigation": "source provenance, quality set, unverified flags, human review",
+      "role": "AI lead",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-05",
+      "score_proposed": "4×5",
+      "risk": "Prompt injection causes tool abuse",
+      "mitigation": "untrusted source isolation, typed tool gateway, capability allowlist",
+      "role": "Security lead",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-06",
+      "score_proposed": "4×4",
+      "risk": "Architecture coupling between Core/Sales",
+      "mitigation": "context boundaries, ADRs, contract tests",
+      "role": "Architecture lead",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-07",
+      "score_proposed": "4×4",
+      "risk": "Missing repository baseline / legacy behavior",
+      "mitigation": "read-only inventory; no assumptions about existing code",
+      "role": "Owner + agent",
+      "status": "ACTIVE BLOCKER"
+    },
+    {
+      "id": "RK-08",
+      "score_proposed": "3×5",
+      "risk": "Credential leak or access escalation",
+      "mitigation": "managed secrets, short-lived tokens, RBAC, scans",
+      "role": "Security lead",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-09",
+      "score_proposed": "4×4",
+      "risk": "Unreliable source data / licensing",
+      "mitigation": "approved-source catalog, source contracts and quality review",
+      "role": "Sales product owner",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-10",
+      "score_proposed": "3×4",
+      "risk": "CRM corruption / duplicate writes",
+      "mitigation": "transactional outbox, idempotency, reconciliation, dry-run",
+      "role": "Engineering",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-11",
+      "score_proposed": "3×5",
+      "risk": "Multi-org information leakage",
+      "mitigation": "tenant boundary verification, isolated retrieval/logging",
+      "role": "Security lead",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-12",
+      "score_proposed": "3×4",
+      "risk": "Budget/performance overrun",
+      "mitigation": "task quotas, token caps, metering and budget sign-off",
+      "role": "Owner + engineering",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-13",
+      "score_proposed": "3×5",
+      "risk": "Deployment outage / unrecoverable migration",
+      "mitigation": "staging, rollback, encrypted backups and restore drill",
+      "role": "Operations",
+      "status": "OPEN"
+    },
+    {
+      "id": "RK-14",
+      "score_proposed": "4×4",
+      "risk": "Unverified agent self-reported completion",
+      "mitigation": "mandatory evidence and independent acceptance",
+      "role": "Governance lead",
+      "status": "OPEN"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "BL-01",
+      "required_input": "Repository URL or archive, branch and codebase access",
+      "blocks": "B-001 and all coding tasks",
+      "status": "OPEN"
+    },
+    {
+      "id": "BL-02",
+      "required_input": "Confirm first users, primary industries/geographies and MVP priority",
+      "blocks": "B-002 onward",
+      "status": "OPEN"
+    },
+    {
+      "id": "BL-03",
+      "required_input": "Authorize applicable regulations, legal review owner and permissible data-source list",
+      "blocks": "B-003; live data/integrations",
+      "status": "OPEN"
+    },
+    {
+      "id": "BL-04",
+      "required_input": "Verify LinkedIn products and actual developer/SNAP access; confirm acceptable manual alternative",
+      "blocks": "LinkedIn connector",
+      "status": "OPEN"
+    },
+    {
+      "id": "BL-05",
+      "required_input": "Decide infrastructure, model-provider/data-usage policy, spending ceilings",
+      "blocks": "stack selection, live AI, deployment",
+      "status": "OPEN"
+    },
+    {
+      "id": "BL-06",
+      "required_input": "Identify CRM/email systems and any available sanctioned sandbox credentials",
+      "blocks": "integration implementation",
+      "status": "OPEN"
+    },
+    {
+      "id": "BL-07",
+      "required_input": "Define measurable NFRs: SLO, latency, data volume, RTO, RPO, security/audit retention",
+      "blocks": "final architecture, load/release gates",
+      "status": "OPEN"
+    },
+    {
+      "id": "BL-08",
+      "required_input": "Name approver(s) for scope, code acceptance, data use and production",
+      "blocks": "gate authorization",
+      "status": "OPEN"
+    }
+  ],
+  "agent_reports": [],
+  "review_decisions": [],
+  "release_history": [],
+  "next_actions": [
+    {
+      "order": 1,
+      "id": "OWNER-001",
+      "action": "Owner review/approve or amend governance baseline",
+      "status": "PENDING"
+    },
+    {
+      "order": 2,
+      "id": "OWNER-002",
+      "action": "Supply authorized repository/archive and approve read-only B-001 assessment",
+      "status": "PENDING"
+    },
+    {
+      "order": 3,
+      "id": "B-001",
+      "action": "Run read-only inventory ONLY after separate authorization",
+      "status": "BLOCKED"
+    },
+    {
+      "order": 4,
+      "id": "B-006",
+      "action": "Potential first software implementation; requires F0 acceptance and approved ADRs and agent prompt",
+      "status": "NOT_AUTHORIZED"
+    }
+  ],
+  "approvals": {
+    "governance_baseline": null,
+    "repository_audit": null,
+    "first_implementation": null,
+    "external_integrations": null,
+    "production": null
+  },
+  "change_log": [
+    {
+      "revision": 1,
+      "date": "2026-10-19",
+      "summary": "Initialized governance charter, 26 requirements, 22 backlog tickets, 14 risks, 8 blockers and two separate coding-agent prompts.",
+      "approval": "PENDING"
+    }
+  ],
+  "persistence_note": "This file was created as a downloadable conversation artifact. It has not been stored in the project repository or auto-synced to future sessions. Add it to owner-controlled project files or repository for canonical persistence.",
+  "report_schema_id": "AXAI-AGENT-REPORT-1.0"
+}

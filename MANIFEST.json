@@ -1,0 +1,32 @@
+{
+  "baseline": "GOV-1.0",
+  "generated_date": "2026-10-19",
+  "files": [
+    {
+      "file": "AXIORYN_AI_GOVERNANCE_MASTER_v1.0.md",
+      "size_bytes": 32019,
+      "sha256": "e90eb6ed468e482e3171136599649d44f2155056ce2649996ff7cd2c8bfd3568"
+    },
+    {
+      "file": "AXIORYN_AI_MASTER_STATE_v1.0.json",
+      "size_bytes": 29288,
+      "sha256": "79961cf4aa1163820d3250613599ac39e4cc99b9f12aba5230b2acdf14334464"
+    },
+    {
+      "file": "AXIORYN_AI_CODING_AGENT_PROMPT_001.md",
+      "size_bytes": 5376,
+      "sha256": "2a48e7d837d24946d6a2cdeb645214f4902881ddff4f90bfc967f71fd19bc21c"
+    },
+    {
+      "file": "AXIORYN_AI_IMPLEMENTATION_PROMPT_002_DRAFT.md",
+      "size_bytes": 5617,
+      "sha256": "314f34cf4eb19d27bd59fd16d131ec5f6567f86b6878d76a9c3a381e72174bae"
+    }
+  ],
+  "counts": {
+    "requirements": 26,
+    "backlog_tickets": 22,
+    "risks": 14,
+    "blockers": 8
+  }
+}
